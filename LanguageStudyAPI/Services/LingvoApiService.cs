@@ -8,64 +8,65 @@ using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc.Routing;
 using System.Runtime.CompilerServices;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace LanguageStudyAPI.Services
 {
     public class LingvoApiService : ILingvoApiService
     {
         private readonly IHttpClientFactory _clientFactory;
-        private string _apiKey;
-        private string? _bearerToken;
+        //private string _apiKey;
+        //private string? _bearerToken;
 
         public LingvoApiService(IHttpClientFactory clientFactory, IConfiguration configuration)
         {
             _clientFactory = clientFactory;
 
-            var apiKey = configuration["LingvoApi:ApiKey"];
-            if (string.IsNullOrEmpty(apiKey))
-            {
-                throw new InvalidOperationException("Lingvo Api Key has not been received from the configuration.");
-            }
-            _apiKey = apiKey;
+            //var apiKey = configuration["LingvoApi:ApiKey"];
+            //if (string.IsNullOrEmpty(apiKey))
+            //{
+            //    throw new InvalidOperationException("Lingvo Api Key has not been received from the configuration.");
+            //}
+            //_apiKey = apiKey;
         }
 
-        public async Task<bool> AuthenticateAsync()
-        {
-            var client = _clientFactory.CreateClient("LingvoApi");
+        //public async Task<bool> AuthenticateAsync()
+        //{
+        //    var client = _clientFactory.CreateClient("LingvoApi");
 
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", _apiKey);
+        //    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", _apiKey);
 
-            var request = new HttpRequestMessage(HttpMethod.Post, "api/v1.1/authenticate");
+        //    var request = new HttpRequestMessage(HttpMethod.Post, "api/v1.1/authenticate");
 
-            var response = await client.SendAsync(request);
+        //    var response = await client.SendAsync(request);
 
-            if (response.IsSuccessStatusCode)
-            {
-                _bearerToken = await response.Content.ReadAsStringAsync();
+        //    if (response.IsSuccessStatusCode)
+        //    {
+        //        _bearerToken = await response.Content.ReadAsStringAsync();
 
-                return true;
-            }
+        //        return true;
+        //    }
 
-            return false;
-        }
+        //    return false;
+        //}
 
-        public async Task ValidateToken()
-        {
-            if (!IsTokenValid())
-            {
-                bool isAuthenticated = await AuthenticateAsync();
-                if (!isAuthenticated)
-                {
-                    throw new InvalidOperationException("Authentication has not been completed.");
-                }
-            }
-        }
+        //public async Task ValidateToken()
+        //{
+        //    if (!IsTokenValid())
+        //    {
+        //        bool isAuthenticated = await AuthenticateAsync();
+        //        if (!isAuthenticated)
+        //        {
+        //            throw new InvalidOperationException("Authentication has not been completed.");
+        //        }
+        //    }
+        //}
         public async Task<string> GetTranslationAsync(string text, string srcLang, string dstLang, bool isCaseSensitive)
         {
-            await ValidateToken();
+            //await ValidateToken();
 
             var client = _clientFactory.CreateClient("LingvoApi");
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _bearerToken);
+            //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _bearerToken);
 
             string requestUrl = $"api/v1/Translation?text={text}&srcLang={srcLang}&dstLang={dstLang}&isCaseSensitive={isCaseSensitive}";
             HttpResponseMessage response = await client.GetAsync(requestUrl);
@@ -134,11 +135,24 @@ namespace LanguageStudyAPI.Services
             return ConvertToLexemeExamples(examples);
         }
 
-        public async Task GetSoundAsync(string dictionaryName, string fileName)
+        public async Task<string> GetSoundAsync(string dictionaryName, string fileName)
         {
-            await ValidateToken();
+            // ValidateToken();
 
-            var client = _clientFactory.CreateClient("LingvoApi")
+            var client = _clientFactory.CreateClient("LingvoApi");
+            //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _bearerToken);
+
+            string requestUrl = $"api/v1/Translation?dictionaryName={dictionaryName}&fileName={fileName}";
+            HttpResponseMessage response = await client.GetAsync(requestUrl);
+
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadAsStringAsync();
+            }
+            else
+            {
+                throw new HttpRequestException($"Error calling Lingvo API: {response.ReasonPhrase}");
+            }
         }
 
         public static List<LexemeExample> ConvertToLexemeExamples(List<JToken> examples)
@@ -166,29 +180,29 @@ namespace LanguageStudyAPI.Services
         }
         
 
-        private bool IsTokenValid()
-        {
-            if (string.IsNullOrEmpty(_bearerToken))
-            {
-                return false;
-            }
-            try
-            {
-                JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
-                JwtSecurityToken token = tokenHandler.ReadJwtToken(_bearerToken);
+        //private bool IsTokenValid()
+        //{
+        //    if (string.IsNullOrEmpty(_bearerToken))
+        //    {
+        //        return false;
+        //    }
+        //    try
+        //    {
+        //        JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
+        //        JwtSecurityToken token = tokenHandler.ReadJwtToken(_bearerToken);
 
-                if (token.ValidTo <= DateTime.UtcNow.AddMinutes(1))
-                {
-                    return false;
-                }
+        //        if (token.ValidTo <= DateTime.UtcNow.AddMinutes(1))
+        //        {
+        //            return false;
+        //        }
 
-                return true;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-        }
+        //        return true;
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return false;
+        //    }
+        //}
 
         public List<LexemeModel> ConvertToLexemeModels(string response)
         {

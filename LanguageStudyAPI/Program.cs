@@ -1,3 +1,4 @@
+using LanguageStudyAPI.Authentication;
 using LanguageStudyAPI.Services;
 using Microsoft.Extensions.Configuration;
 using System.Net.Http.Headers;
@@ -34,8 +35,17 @@ builder.Services.AddHttpClient("LingvoApi", c =>
 {
     c.BaseAddress = new Uri(builder.Configuration["LingvoApi:BaseUrl"]
         ?? throw new InvalidOperationException("BaseUrl for Lingvo API is not configured. Please check appsettings.json."));
-});
+})
+.AddHttpMessageHandler<LingvoAuthenticationHandler>();
 
+builder.Services.AddTransient(sp =>
+{
+    var clientFactory = sp.GetRequiredService<IHttpClientFactory>();
+    var client = clientFactory.CreateClient("LingvoApi");
+    var apiKey = builder.Configuration["LingvoApi:ApiKey"]
+        ?? throw new InvalidOperationException("BaseUrl for Lingvo API is not configured. Please check appsettings.json.");
+    return new LingvoAuthenticationHandler(client, apiKey);
+});
 
 var app = builder.Build();
 

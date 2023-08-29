@@ -1,6 +1,8 @@
 using LanguageStudyAPI.Authentication;
 using LanguageStudyAPI.Services;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http.Headers;
 using System.Text;
 
@@ -17,6 +19,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<GoogleTranslationAPIService>();
 
+builder.Services.AddMemoryCache();
+
 builder.Services.AddScoped<LingueeApiService>();
 builder.Services.AddHttpClient<LingueeApiService>(client =>
 {
@@ -25,26 +29,33 @@ builder.Services.AddHttpClient<LingueeApiService>(client =>
 });
 
 builder.Services.AddScoped<ILingvoApiService, LingvoApiService>();
-//builder.Services.AddHttpClient<LingvoApiService>(client =>
-//{
-//    client.BaseAddress = new Uri(builder.Configuration["LingvoApi:BaseUri"] 
-//        ?? throw new ArgumentNullException("Lingvo API Base URI wasn't found in configuration settings"));
-//});
+
+builder.Services.AddScoped<LingvoApiAuthenticationHandler>();
 
 builder.Services.AddHttpClient("LingvoApi", c =>
 {
     c.BaseAddress = new Uri(builder.Configuration["LingvoApi:BaseUrl"]
         ?? throw new InvalidOperationException("BaseUrl for Lingvo API is not configured. Please check appsettings.json."));
 })
-.AddHttpMessageHandler<LingvoAuthenticationHandler>();
+.AddHttpMessageHandler<LingvoApiAuthenticationHandler>();
 
-builder.Services.AddTransient(sp =>
+builder.Services.AddTransient<IApiAuthenticationService>(serviceProvider =>
 {
-    var clientFactory = sp.GetRequiredService<IHttpClientFactory>();
-    var client = clientFactory.CreateClient("LingvoApi");
-    var apiKey = builder.Configuration["LingvoApi:ApiKey"]
-        ?? throw new InvalidOperationException("BaseUrl for Lingvo API is not configured. Please check appsettings.json.");
-    return new LingvoAuthenticationHandler(client, apiKey);
+    var httpClientFactory = serviceProvider.GetRequiredService<IHttpClientFactory>();
+    var memoryCache = serviceProvider.GetRequiredService<IMemoryCache>();
+    var httpClient = httpClientFactory.CreateClient();
+
+    httpClient.BaseAddress = new Uri(builder.Configuration["LingvoApi:BaseUrl"])
+        ?? throw new InvalidOperationException("ApiKey for Lingvo API is not configured. Please check appsettings.json.");
+
+    string apiKey = builder.Configuration["LingvoApi:ApiKey"]
+        ?? throw new InvalidOperationException("ApiKey for Lingvo API is not configured. Please check appsettings.json.");
+
+    string tokenExpirationInMinutesString = builder.Configuration["LingvoApi:TokenExpirationInMinutes"]
+        ?? throw new InvalidOperationException("ApiKey for Lingvo API is not configured. Please check appsettings.json.");
+    DateTimeOffset tokenExpirationInMinutes = new DateTimeOffSet(tokenExpirationInMinutesString);
+
+    return new LingvoApiAuthenticationService(httpClient, memoryCache, apiKey, tokenExpirationInMinutes);
 });
 
 var app = builder.Build();

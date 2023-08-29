@@ -14,62 +14,16 @@ namespace LanguageStudyAPI.Services
 {
     public class LingvoApiService : ILingvoApiService
     {
-        private readonly IHttpClientFactory _clientFactory;
-        //private string _apiKey;
-        //private string? _bearerToken;
-
-        public LingvoApiService(IHttpClientFactory clientFactory, IConfiguration configuration)
+        private readonly HttpClient _client;
+        public LingvoApiService(IHttpClientFactory clientFactory)
         {
-            _clientFactory = clientFactory;
-
-            //var apiKey = configuration["LingvoApi:ApiKey"];
-            //if (string.IsNullOrEmpty(apiKey))
-            //{
-            //    throw new InvalidOperationException("Lingvo Api Key has not been received from the configuration.");
-            //}
-            //_apiKey = apiKey;
+            _client = clientFactory.CreateClient("LingvoApi");
         }
 
-        //public async Task<bool> AuthenticateAsync()
-        //{
-        //    var client = _clientFactory.CreateClient("LingvoApi");
-
-        //    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", _apiKey);
-
-        //    var request = new HttpRequestMessage(HttpMethod.Post, "api/v1.1/authenticate");
-
-        //    var response = await client.SendAsync(request);
-
-        //    if (response.IsSuccessStatusCode)
-        //    {
-        //        _bearerToken = await response.Content.ReadAsStringAsync();
-
-        //        return true;
-        //    }
-
-        //    return false;
-        //}
-
-        //public async Task ValidateToken()
-        //{
-        //    if (!IsTokenValid())
-        //    {
-        //        bool isAuthenticated = await AuthenticateAsync();
-        //        if (!isAuthenticated)
-        //        {
-        //            throw new InvalidOperationException("Authentication has not been completed.");
-        //        }
-        //    }
-        //}
         public async Task<string> GetTranslationAsync(string text, string srcLang, string dstLang, bool isCaseSensitive)
         {
-            //await ValidateToken();
-
-            var client = _clientFactory.CreateClient("LingvoApi");
-            //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _bearerToken);
-
             string requestUrl = $"api/v1/Translation?text={text}&srcLang={srcLang}&dstLang={dstLang}&isCaseSensitive={isCaseSensitive}";
-            HttpResponseMessage response = await client.GetAsync(requestUrl);
+            HttpResponseMessage response = await _client.GetAsync(requestUrl);
 
             if (response.IsSuccessStatusCode)
             {
@@ -79,53 +33,6 @@ namespace LanguageStudyAPI.Services
             {
                 throw new HttpRequestException($"Error calling Lingvo API: {response.ReasonPhrase}");
             }
-            //try
-            //{
-            //    _httpClient.DefaultRequestHeaders.Clear();
-            //    _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {_bearerToken}");
-
-            //    string translationUrl = $"{_apiTranslationUrl}?text={text}&srcLang={srcLang}&dstLang={dstLang}&isCaseSensitive={isCaseSensitive}";
-
-            //    HttpResponseMessage translationResponse = await _httpClient.GetAsync(translationUrl);
-
-            //    if (translationResponse.IsSuccessStatusCode)
-            //    {
-            //        string translationResult = await translationResponse.Content.ReadAsStringAsync();
-            //        var jArray = JArray.Parse(translationResult);
-            //        //FlattenMarkupNodes(jArray);
-            //        var examples = FindAllExampleNodes(jArray);
-            //        var lexemeExamplesList = ConvertToLexemeExamples(examples);
-
-            //        JArray resultArray = new JArray();
-
-            //        foreach (var token in examples)
-            //        {
-            //            resultArray.Add(token.DeepClone()); // добавляем копию токена в массив
-            //        }
-            //        return resultArray.ToString();
-
-            //        var strExs = new List<string>();
-            //        foreach(var example in examples)
-            //        {
-            //            strExs.Add(example.ToString());
-            //        }
-
-            //        translationResult = jArray.ToString();
-            //        var rootObjects = JsonConvert.DeserializeObject<List<LingvoModel>>(translationResult);
-            //        //var result = ConvertToLexemeModels(rootObjects);
-            //        return translationResult;
-            //    }
-            //    else
-            //    {
-            //        throw new ArgumentException();
-            //        //return $"Translation request failed. Status code: {translationResponse.StatusCode}";
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw;
-            //    //return $"An error occurred: {ex.Message}";
-            //}
         }
         public async Task<List<LexemeExample>> GetExamplesFromTranslationAsync(string text, string srcLang, string dstLang, bool isCaseSensitive)
         {
@@ -137,13 +44,8 @@ namespace LanguageStudyAPI.Services
 
         public async Task<string> GetSoundAsync(string dictionaryName, string fileName)
         {
-            // ValidateToken();
-
-            var client = _clientFactory.CreateClient("LingvoApi");
-            //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _bearerToken);
-
             string requestUrl = $"api/v1/Translation?dictionaryName={dictionaryName}&fileName={fileName}";
-            HttpResponseMessage response = await client.GetAsync(requestUrl);
+            HttpResponseMessage response = await _client.GetAsync(requestUrl);
 
             if (response.IsSuccessStatusCode)
             {
@@ -179,31 +81,6 @@ namespace LanguageStudyAPI.Services
             return lexemeExamples;
         }
         
-
-        //private bool IsTokenValid()
-        //{
-        //    if (string.IsNullOrEmpty(_bearerToken))
-        //    {
-        //        return false;
-        //    }
-        //    try
-        //    {
-        //        JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
-        //        JwtSecurityToken token = tokenHandler.ReadJwtToken(_bearerToken);
-
-        //        if (token.ValidTo <= DateTime.UtcNow.AddMinutes(1))
-        //        {
-        //            return false;
-        //        }
-
-        //        return true;
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return false;
-        //    }
-        //}
-
         public List<LexemeModel> ConvertToLexemeModels(string response)
         {
             List<LexemeModel> lexemeModels = new List<LexemeModel>();
@@ -276,7 +153,6 @@ namespace LanguageStudyAPI.Services
             }
         }
 
-
         public static List<JToken> FindAllExampleNodes(JToken token)
         {
             List<JToken> results = new List<JToken>();
@@ -301,7 +177,6 @@ namespace LanguageStudyAPI.Services
 
             return results;
         }
-
 
         public static void FlattenMarkupNodes(JToken parentToken)
         {
@@ -430,9 +305,6 @@ namespace LanguageStudyAPI.Services
         //        return $"An error occurred: {ex.Message}";
         //    }
         //}
-
-
-
 
     }
 }

@@ -1,0 +1,92 @@
+[
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "to address an envelope ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— написать на конверте адрес",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "to seal an envelope ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— запечатать конверт",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "stamped envelope ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— конверт с маркой",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "window envelope ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— конверт с прямоугольником из прозрачной бумаги ",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "The Earth is surrounded with an aerial envelope or atmosphere. ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— Земля окружена воздушной оболочкой, или атмосферой.",
+        "IsOptional": false
+      }
+    ]
+  }
+]

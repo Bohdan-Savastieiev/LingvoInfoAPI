@@ -1,0 +1,818 @@
+[
+  {
+    "Title": "horizon",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "horizon",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "LingvoUniversal (En-Ru)",
+    "ArticleId": "LingvoUniversal (En-Ru)__horizon",
+    "Body": [
+      {
+        "Markup": [
+          {
+            "Node": "Transcription",
+            "Text": "hə'raɪz(ə)n",
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": " ",
+            "IsOptional": false
+          },
+          {
+            "FullText": "британский вариант английского языка; употребляется в Великобритании",
+            "Node": "Abbrev",
+            "Text": "брит.",
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": " ",
+            "IsOptional": false
+          },
+          {
+            "FileName": "horizon.wav",
+            "Node": "Sound",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": " / ",
+            "IsOptional": false
+          },
+          {
+            "FullText": "американский вариант английского языка; употребляется в США",
+            "Node": "Abbrev",
+            "Text": "амер.",
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": " ",
+            "IsOptional": false
+          },
+          {
+            "FileName": "6184.wav",
+            "Node": "Sound",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      },
+      {
+        "Markup": [
+          {
+            "FullText": "имя существительное",
+            "Node": "Abbrev",
+            "Text": "сущ.",
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      },
+      {
+        "Type": 3,
+        "Items": [
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "горизонт",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              },
+              {
+                "Type": null,
+                "Items": [
+                  {
+                    "Markup": [
+                      {
+                        "Markup": [
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "on the horizon ",
+                            "IsOptional": false
+                          },
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "— на горизонте",
+                            "IsOptional": false
+                          }
+                        ],
+                        "Node": "Example",
+                        "Text": null,
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "ExampleItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Markup": [
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "to appear on the horizon ",
+                            "IsOptional": false
+                          },
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "— появляться на горизонте",
+                            "IsOptional": false
+                          }
+                        ],
+                        "Node": "Example",
+                        "Text": null,
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "ExampleItem",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Examples",
+                "Text": null,
+                "IsOptional": true
+              },
+              {
+                "Type": null,
+                "Items": [
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoUniversal (En-Ru)",
+                        "ArticleId": "LingvoUniversal (En-Ru)__apparent horizon",
+                        "Node": "CardRef",
+                        "Text": "apparent horizon",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoUniversal (En-Ru)",
+                        "ArticleId": "LingvoUniversal (En-Ru)__visible horizon",
+                        "Node": "CardRef",
+                        "Text": "visible horizon",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoUniversal (En-Ru)",
+                        "ArticleId": "LingvoUniversal (En-Ru)__rational horizon",
+                        "Node": "CardRef",
+                        "Text": "rational horizon",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoUniversal (En-Ru)",
+                        "ArticleId": "LingvoUniversal (En-Ru)__true horizon",
+                        "Node": "CardRef",
+                        "Text": "true horizon",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoUniversal (En-Ru)",
+                        "ArticleId": "LingvoUniversal (En-Ru)__celestial horizon",
+                        "Node": "CardRef",
+                        "Text": "celestial horizon",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "CardRefs",
+                "Text": null,
+                "IsOptional": true
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "обычно horizons ",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "кругозор; диапазон ",
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "IsItalics": true,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "(знаний, возможностей)",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "Comment",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              },
+              {
+                "Type": null,
+                "Items": [
+                  {
+                    "Markup": [
+                      {
+                        "Markup": [
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "to broaden one's horizons ",
+                            "IsOptional": false
+                          },
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "— расширять свой кругозор",
+                            "IsOptional": false
+                          }
+                        ],
+                        "Node": "Example",
+                        "Text": null,
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "ExampleItem",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Examples",
+                "Text": null,
+                "IsOptional": true
+              },
+              {
+                "Node": "Caption",
+                "Text": "Syn:",
+                "IsOptional": true
+              },
+              {
+                "Markup": [
+                  {
+                    "Dictionary": "LingvoUniversal (En-Ru)",
+                    "ArticleId": "LingvoUniversal (En-Ru)__mental outlook",
+                    "Node": "CardRef",
+                    "Text": "mental outlook",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": ", range of interests",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": true
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "FullText": "геология",
+                    "Node": "Abbrev",
+                    "Text": "геол.",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "ярус, отложение одного возраста",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "List",
+        "Text": null,
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Title": "horizon",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "horizon",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "Physics (En-Ru)",
+    "ArticleId": "Physics (En-Ru)__horizon",
+    "Body": [
+      {
+        "Markup": [
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": "горизонт",
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Title": "horizon",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "horizon",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "Biology (En-Ru)",
+    "ArticleId": "Biology (En-Ru)__horizon",
+    "Body": [
+      {
+        "Markup": [
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": "горизонт",
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      },
+      {
+        "Type": null,
+        "Items": [
+          {
+            "Markup": [
+              {
+                "Dictionary": "Biology (En-Ru)",
+                "ArticleId": "Biology (En-Ru)__columnar horizon",
+                "Node": "CardRef",
+                "Text": "columnar horizon",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Dictionary": "Biology (En-Ru)",
+                "ArticleId": "Biology (En-Ru)__podzolized horizon",
+                "Node": "CardRef",
+                "Text": "podzolized horizon",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "CardRefs",
+        "Text": null,
+        "IsOptional": true
+      }
+    ]
+  },
+  {
+    "Title": "horizon",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "horizon",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "LingvoComputer (En-Ru)",
+    "ArticleId": "LingvoComputer (En-Ru)__horizon",
+    "Body": [
+      {
+        "Markup": [
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": "горизонт, ярус",
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      },
+      {
+        "Type": null,
+        "Items": [
+          {
+            "Markup": [
+              {
+                "Dictionary": "LingvoComputer (En-Ru)",
+                "ArticleId": "LingvoComputer (En-Ru)__planning horizon",
+                "Node": "CardRef",
+                "Text": "planning horizon",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Dictionary": "LingvoComputer (En-Ru)",
+                "ArticleId": "LingvoComputer (En-Ru)__time horizon",
+                "Node": "CardRef",
+                "Text": "time horizon",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "CardRefs",
+        "Text": null,
+        "IsOptional": true
+      }
+    ]
+  },
+  {
+    "Title": "horizon",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "horizon",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "Telecoms (En-Ru)",
+    "ArticleId": "Telecoms (En-Ru)__horizon",
+    "Body": [
+      {
+        "Markup": [
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": "горизонт",
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      },
+      {
+        "Type": null,
+        "Items": [
+          {
+            "Markup": [
+              {
+                "Dictionary": "Telecoms (En-Ru)",
+                "ArticleId": "Telecoms (En-Ru)__optical horizon",
+                "Node": "CardRef",
+                "Text": "optical horizon",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Dictionary": "Telecoms (En-Ru)",
+                "ArticleId": "Telecoms (En-Ru)__radio horizon",
+                "Node": "CardRef",
+                "Text": "radio horizon",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "CardRefs",
+        "Text": null,
+        "IsOptional": true
+      }
+    ]
+  },
+  {
+    "Title": "horizon",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "horizon",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "Engineering (En-Ru)",
+    "ArticleId": "Engineering (En-Ru)__horizon",
+    "Body": [
+      {
+        "Markup": [
+          {
+            "FullText": "употребляется в сочетании",
+            "Node": "Abbrev",
+            "Text": "в соч.",
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      },
+      {
+        "Type": null,
+        "Items": [
+          {
+            "Markup": [
+              {
+                "Dictionary": "Engineering (En-Ru)",
+                "ArticleId": "Engineering (En-Ru)__planning horizon",
+                "Node": "CardRef",
+                "Text": "planning horizon",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "CardRefs",
+        "Text": null,
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Title": "horizon",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "horizon",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "AmericanEnglish (En-Ru)",
+    "ArticleId": "AmericanEnglish (En-Ru)__horizon",
+    "Body": [
+      {
+        "Markup": [
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": "гориз",
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": true,
+            "Node": "Text",
+            "Text": "о",
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": "нт ",
+            "IsOptional": false
+          },
+          {
+            "FullText": "мужской род",
+            "Node": "Abbrev",
+            "Text": "м",
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      },
+      {
+        "Type": null,
+        "Items": [
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "on the horizon ",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "— весьм",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": false,
+                    "IsAccent": true,
+                    "Node": "Text",
+                    "Text": "а ",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "веро",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": false,
+                    "IsAccent": true,
+                    "Node": "Text",
+                    "Text": "я",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "тный ",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Example",
+                "Text": null,
+                "IsOptional": false
+              },
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "(",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": true,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "о событии",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": ")",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Comment",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ExampleItem",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "Examples",
+        "Text": null,
+        "IsOptional": true
+      }
+    ]
+  }
+]

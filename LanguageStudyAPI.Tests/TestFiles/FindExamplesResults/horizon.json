@@ -1,0 +1,102 @@
+[
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "on the horizon ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— на горизонте",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "to appear on the horizon ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— появляться на горизонте",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "to broaden one's horizons ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— расширять свой кругозор",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "on the horizon ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— весьм",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": true,
+        "Node": "Text",
+        "Text": "а ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "веро",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": true,
+        "Node": "Text",
+        "Text": "я",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "тный ",
+        "IsOptional": false
+      }
+    ]
+  }
+]

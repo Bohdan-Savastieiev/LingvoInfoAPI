@@ -1,0 +1,1857 @@
+[
+  {
+    "Title": "envelope",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "envelope",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "LingvoUniversal (En-Ru)",
+    "ArticleId": "LingvoUniversal (En-Ru)__envelope",
+    "Body": [
+      {
+        "Markup": [
+          {
+            "Node": "Transcription",
+            "Text": "'envələup",
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": " ",
+            "IsOptional": false
+          },
+          {
+            "FullText": "британский вариант английского языка; употребляется в Великобритании",
+            "Node": "Abbrev",
+            "Text": "брит.",
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": " ",
+            "IsOptional": false
+          },
+          {
+            "FileName": "envelope.wav",
+            "Node": "Sound",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": " / ",
+            "IsOptional": false
+          },
+          {
+            "FullText": "американский вариант английского языка; употребляется в США",
+            "Node": "Abbrev",
+            "Text": "амер.",
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": " ",
+            "IsOptional": false
+          },
+          {
+            "FileName": "4400.wav",
+            "Node": "Sound",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      },
+      {
+        "Markup": [
+          {
+            "FullText": "имя существительное",
+            "Node": "Abbrev",
+            "Text": "сущ.",
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      },
+      {
+        "Type": 3,
+        "Items": [
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "конверт",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              },
+              {
+                "Type": null,
+                "Items": [
+                  {
+                    "Markup": [
+                      {
+                        "Markup": [
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "to address an envelope ",
+                            "IsOptional": false
+                          },
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "— написать на конверте адрес",
+                            "IsOptional": false
+                          }
+                        ],
+                        "Node": "Example",
+                        "Text": null,
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "ExampleItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Markup": [
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "to seal an envelope ",
+                            "IsOptional": false
+                          },
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "— запечатать конверт",
+                            "IsOptional": false
+                          }
+                        ],
+                        "Node": "Example",
+                        "Text": null,
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "ExampleItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Markup": [
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "stamped envelope ",
+                            "IsOptional": false
+                          },
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "— конверт с маркой",
+                            "IsOptional": false
+                          }
+                        ],
+                        "Node": "Example",
+                        "Text": null,
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "ExampleItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Markup": [
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "window envelope ",
+                            "IsOptional": false
+                          },
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "— конверт с прямоугольником из прозрачной бумаги ",
+                            "IsOptional": false
+                          }
+                        ],
+                        "Node": "Example",
+                        "Text": null,
+                        "IsOptional": false
+                      },
+                      {
+                        "Markup": [
+                          {
+                            "IsItalics": true,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "(через который виден адрес, напечатанный на письме)",
+                            "IsOptional": false
+                          }
+                        ],
+                        "Node": "Comment",
+                        "Text": null,
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "ExampleItem",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Examples",
+                "Text": null,
+                "IsOptional": true
+              },
+              {
+                "Type": null,
+                "Items": [
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoUniversal (En-Ru)",
+                        "ArticleId": "LingvoUniversal (En-Ru)__stamped addressed envelope",
+                        "Node": "CardRef",
+                        "Text": "stamped addressed envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoUniversal (En-Ru)",
+                        "ArticleId": "LingvoUniversal (En-Ru)__self-addressed stamped envelope",
+                        "Node": "CardRef",
+                        "Text": "self-addressed stamped envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoUniversal (En-Ru)",
+                        "ArticleId": "LingvoUniversal (En-Ru)__pay envelope",
+                        "Node": "CardRef",
+                        "Text": "pay envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoUniversal (En-Ru)",
+                        "ArticleId": "LingvoUniversal (En-Ru)__on the back of an envelope",
+                        "Node": "CardRef",
+                        "Text": "on the back of an envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "CardRefs",
+                "Text": null,
+                "IsOptional": true
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "обёртка, обложка; обёрточная бумага, упаковка",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              },
+              {
+                "Node": "Caption",
+                "Text": "Syn:",
+                "IsOptional": true
+              },
+              {
+                "Markup": [
+                  {
+                    "Dictionary": "LingvoUniversal (En-Ru)",
+                    "ArticleId": "LingvoUniversal (En-Ru)__wrapper",
+                    "Node": "CardRef",
+                    "Text": "wrapper",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": true
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "оболочка",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              },
+              {
+                "Type": null,
+                "Items": [
+                  {
+                    "Markup": [
+                      {
+                        "Markup": [
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "The Earth is surrounded with an aerial envelope or atmosphere. ",
+                            "IsOptional": false
+                          },
+                          {
+                            "IsItalics": false,
+                            "IsAccent": false,
+                            "Node": "Text",
+                            "Text": "— Земля окружена воздушной оболочкой, или атмосферой.",
+                            "IsOptional": false
+                          }
+                        ],
+                        "Node": "Example",
+                        "Text": null,
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "ExampleItem",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Examples",
+                "Text": null,
+                "IsOptional": true
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "FullText": "математика",
+                    "Node": "Abbrev",
+                    "Text": "мат.",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "огибающая ",
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "IsItalics": true,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "(линия)",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "Comment",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "FullText": "технический термин",
+                    "Node": "Abbrev",
+                    "Text": "тех.",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "диапазон режимов для безопасной эксплуатации",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              },
+              {
+                "Type": null,
+                "Items": [
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoUniversal (En-Ru)",
+                        "ArticleId": "LingvoUniversal (En-Ru)__push the envelope",
+                        "Node": "CardRef",
+                        "Text": "push the envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "CardRefs",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "List",
+        "Text": null,
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Title": "envelope",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "envelope",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "Physics (En-Ru)",
+    "ArticleId": "Physics (En-Ru)__envelope",
+    "Body": [
+      {
+        "Markup": [
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": "баллон, колба ",
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "IsItalics": false,
+                "IsAccent": false,
+                "Node": "Text",
+                "Text": "(",
+                "IsOptional": false
+              },
+              {
+                "IsItalics": true,
+                "IsAccent": false,
+                "Node": "Text",
+                "Text": "электронной лампы",
+                "IsOptional": false
+              },
+              {
+                "IsItalics": false,
+                "IsAccent": false,
+                "Node": "Text",
+                "Text": ")",
+                "IsOptional": false
+              }
+            ],
+            "Node": "Comment",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": ", капсула, огибающая кривая, огибающая, огибающая поверхность",
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Title": "envelope",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "envelope",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "Biology (En-Ru)",
+    "ArticleId": "Biology (En-Ru)__envelope",
+    "Body": [
+      {
+        "Type": 3,
+        "Items": [
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "оболочка",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "FullText": "ботаника",
+                    "Node": "Abbrev",
+                    "Text": "бот.",
+                    "IsOptional": false
+                  },
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "обвёртка; покров",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "плёнка ",
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "(",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": true,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "в яйце",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": ")",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "Comment",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              },
+              {
+                "Type": null,
+                "Items": [
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Biology (En-Ru)",
+                        "ArticleId": "Biology (En-Ru)__biological envelope",
+                        "Node": "CardRef",
+                        "Text": "biological envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Biology (En-Ru)",
+                        "ArticleId": "Biology (En-Ru)__cell envelope",
+                        "Node": "CardRef",
+                        "Text": "cell envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Biology (En-Ru)",
+                        "ArticleId": "Biology (En-Ru)__floral envelope",
+                        "Node": "CardRef",
+                        "Text": "floral envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Biology (En-Ru)",
+                        "ArticleId": "Biology (En-Ru)__nuclear envelope",
+                        "Node": "CardRef",
+                        "Text": "nuclear envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "CardRefs",
+                "Text": null,
+                "IsOptional": true
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "List",
+        "Text": null,
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Title": "envelope",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "envelope",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "LingvoComputer (En-Ru)",
+    "ArticleId": "LingvoComputer (En-Ru)__envelope",
+    "Body": [
+      {
+        "Type": 3,
+        "Items": [
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "огибающая ",
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "(",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": true,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "поверхность, кривая",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": ")",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "Comment",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "конверт ",
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "(",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": true,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "при передаче пакетов данных",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": ")",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "Comment",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "баллон, колба ",
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "(",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": true,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "лампы или электронно-лучевой трубки",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": ")",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "Comment",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "граница ",
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "(",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": true,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "области",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": ")",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "Comment",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              },
+              {
+                "Type": null,
+                "Items": [
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoComputer (En-Ru)",
+                        "ArticleId": "LingvoComputer (En-Ru)__confidence envelope",
+                        "Node": "CardRef",
+                        "Text": "confidence envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoComputer (En-Ru)",
+                        "ArticleId": "LingvoComputer (En-Ru)__permanently locked envelope",
+                        "Node": "CardRef",
+                        "Text": "permanently locked envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoComputer (En-Ru)",
+                        "ArticleId": "LingvoComputer (En-Ru)__pulse envelope",
+                        "Node": "CardRef",
+                        "Text": "pulse envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoComputer (En-Ru)",
+                        "ArticleId": "LingvoComputer (En-Ru)__start-stop envelope",
+                        "Node": "CardRef",
+                        "Text": "start-stop envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "LingvoComputer (En-Ru)",
+                        "ArticleId": "LingvoComputer (En-Ru)__operating envelope",
+                        "Node": "CardRef",
+                        "Text": "operating envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "CardRefs",
+                "Text": null,
+                "IsOptional": true
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "List",
+        "Text": null,
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Title": "envelope",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "envelope",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "Telecoms (En-Ru)",
+    "ArticleId": "Telecoms (En-Ru)__envelope",
+    "Body": [
+      {
+        "Markup": [
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": "огибающая",
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      },
+      {
+        "Type": null,
+        "Items": [
+          {
+            "Markup": [
+              {
+                "Dictionary": "Telecoms (En-Ru)",
+                "ArticleId": "Telecoms (En-Ru)__amplitude envelope",
+                "Node": "CardRef",
+                "Text": "amplitude envelope",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Dictionary": "Telecoms (En-Ru)",
+                "ArticleId": "Telecoms (En-Ru)__modulation envelope",
+                "Node": "CardRef",
+                "Text": "modulation envelope",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Dictionary": "Telecoms (En-Ru)",
+                "ArticleId": "Telecoms (En-Ru)__noise envelope",
+                "Node": "CardRef",
+                "Text": "noise envelope",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Dictionary": "Telecoms (En-Ru)",
+                "ArticleId": "Telecoms (En-Ru)__pulse envelope",
+                "Node": "CardRef",
+                "Text": "pulse envelope",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Dictionary": "Telecoms (En-Ru)",
+                "ArticleId": "Telecoms (En-Ru)__signal envelope",
+                "Node": "CardRef",
+                "Text": "signal envelope",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Dictionary": "Telecoms (En-Ru)",
+                "ArticleId": "Telecoms (En-Ru)__signal-wave envelope",
+                "Node": "CardRef",
+                "Text": "signal-wave envelope",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Dictionary": "Telecoms (En-Ru)",
+                "ArticleId": "Telecoms (En-Ru)__spectrum envelope",
+                "Node": "CardRef",
+                "Text": "spectrum envelope",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "CardRefs",
+        "Text": null,
+        "IsOptional": true
+      }
+    ]
+  },
+  {
+    "Title": "envelope",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "envelope",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "Engineering (En-Ru)",
+    "ArticleId": "Engineering (En-Ru)__envelope",
+    "Body": [
+      {
+        "Type": 3,
+        "Items": [
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "оболочка; кожух; обшивка",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "зона обработки; рабочая зона ",
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "(",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": true,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "напр. робота",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": ")",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "Comment",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "наибольшие размеры ",
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "(",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": true,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "обрабатываемого изделия",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": ")",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "Comment",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "огибать, охватывать",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "огибающая ",
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "(",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": true,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "поверхность, кривая",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": ")",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "Comment",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "конверт ",
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "(",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": true,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "при передаче пакетов данных",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": ")",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "Comment",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "баллон, колба ",
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "(",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": true,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "лампы или ЭЛТ",
+                        "IsOptional": false
+                      },
+                      {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": ")",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "Comment",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          },
+          {
+            "Markup": [
+              {
+                "Markup": [
+                  {
+                    "IsItalics": false,
+                    "IsAccent": false,
+                    "Node": "Text",
+                    "Text": "ограждающая конструкция",
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+              },
+              {
+                "Type": null,
+                "Items": [
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__envelope of the metal",
+                        "Node": "CardRef",
+                        "Text": "envelope of the metal",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__cutting envelope",
+                        "Node": "CardRef",
+                        "Text": "cutting envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__inspection envelope",
+                        "Node": "CardRef",
+                        "Text": "inspection envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__machining envelope",
+                        "Node": "CardRef",
+                        "Text": "machining envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__maximum grinding envelope",
+                        "Node": "CardRef",
+                        "Text": "maximum grinding envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__maximum milling envelope",
+                        "Node": "CardRef",
+                        "Text": "maximum milling envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__maximum turning envelope",
+                        "Node": "CardRef",
+                        "Text": "maximum turning envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__maximum work envelope",
+                        "Node": "CardRef",
+                        "Text": "maximum work envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__measuring envelope",
+                        "Node": "CardRef",
+                        "Text": "measuring envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__robot's envelope",
+                        "Node": "CardRef",
+                        "Text": "robot's envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__robot's work envelope",
+                        "Node": "CardRef",
+                        "Text": "robot's work envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__robot's working envelope",
+                        "Node": "CardRef",
+                        "Text": "robot's working envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__tolerance envelope",
+                        "Node": "CardRef",
+                        "Text": "tolerance envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__volumetric envelope",
+                        "Node": "CardRef",
+                        "Text": "volumetric envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__working envelope",
+                        "Node": "CardRef",
+                        "Text": "working envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__working envelope of the robot",
+                        "Node": "CardRef",
+                        "Text": "working envelope of the robot",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__workpiece envelope",
+                        "Node": "CardRef",
+                        "Text": "workpiece envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  },
+                  {
+                    "Markup": [
+                      {
+                        "Dictionary": "Engineering (En-Ru)",
+                        "ArticleId": "Engineering (En-Ru)__X-Y-Z work envelope",
+                        "Node": "CardRef",
+                        "Text": "X-Y-Z work envelope",
+                        "IsOptional": false
+                      }
+                    ],
+                    "Node": "CardRefItem",
+                    "Text": null,
+                    "IsOptional": false
+                  }
+                ],
+                "Node": "CardRefs",
+                "Text": null,
+                "IsOptional": true
+              }
+            ],
+            "Node": "ListItem",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "List",
+        "Text": null,
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Title": "envelope",
+    "TitleMarkup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "envelope",
+        "IsOptional": false
+      }
+    ],
+    "Dictionary": "AmericanEnglish (En-Ru)",
+    "ArticleId": "AmericanEnglish (En-Ru)__envelope",
+    "Body": [
+      {
+        "Markup": [
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": "конв",
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": true,
+            "Node": "Text",
+            "Text": "е",
+            "IsOptional": false
+          },
+          {
+            "IsItalics": false,
+            "IsAccent": false,
+            "Node": "Text",
+            "Text": "рт ",
+            "IsOptional": false
+          },
+          {
+            "FullText": "мужской род",
+            "Node": "Abbrev",
+            "Text": "м",
+            "IsOptional": false
+          }
+        ],
+        "Node": "Paragraph",
+        "Text": null,
+        "IsOptional": false
+      },
+      {
+        "Type": null,
+        "Items": [
+          {
+            "Markup": [
+              {
+                "Dictionary": "AmericanEnglish (En-Ru)",
+                "ArticleId": "AmericanEnglish (En-Ru)__manila envelope",
+                "Node": "CardRef",
+                "Text": "manila envelope",
+                "IsOptional": false
+              }
+            ],
+            "Node": "CardRefItem",
+            "Text": null,
+            "IsOptional": false
+          }
+        ],
+        "Node": "CardRefs",
+        "Text": null,
+        "IsOptional": true
+      }
+    ]
+  }
+]

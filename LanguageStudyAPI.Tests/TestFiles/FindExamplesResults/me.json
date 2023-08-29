@@ -1,0 +1,382 @@
+[
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "Can you hear me? ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— Ты меня слышишь?",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "Who is it? - It's me. ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— Кто это? - Это я.",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "He is considerably younger than me. ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— Он значительно моложе меня.",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "I laid me down. ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— Я улёгся.",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "give me ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— д",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": true,
+        "Node": "Text",
+        "Text": "а",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "йте мне",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "have you seen me? ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— вы в",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": true,
+        "Node": "Text",
+        "Text": "и",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "дели мен",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": true,
+        "Node": "Text",
+        "Text": "я",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "?",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "II, ii ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— два",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "III, iii ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— три",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "IV, iv ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— четыре",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "VI, vi ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— шесть",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "VII, vii ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— семь",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "VIII, viii ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— восемь",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "IX, ix ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— девять",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "I am ready. ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— Я готов.",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "I poured him a glass of water. ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— Я налил ему стакан воды.",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "When I first heard a song from this album, I was driving on I-5, on my way to Pasadena. ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— Одну из песен с этого альбома я впервые услышал за рулём, когда ехал по 5-й федеральной автостраде в Пасадену.",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "Prince Edward I ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— о-в принца Эдуарда",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "I have ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— у мен",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": true,
+        "Node": "Text",
+        "Text": "я ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "есть",
+        "IsOptional": false
+      }
+    ]
+  }
+]

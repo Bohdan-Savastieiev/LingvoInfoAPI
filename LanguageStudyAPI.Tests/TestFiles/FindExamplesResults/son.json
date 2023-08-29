@@ -1,0 +1,194 @@
+[
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "only son ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— единственный сын",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "adopted / foster son ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— приёмный сын",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "to adopt a son ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— усыновлять (ребёнка)",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "to marry off a son ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— женить сына",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "He was like a son to them. ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— Он был им как сын.",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "sons of soil ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— земледельцы, крестьяне",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "sons of Africa ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— африканцы",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "Approach, ye sons of Wisdom, and rejoice. ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— Подойдите, сыны мудрости, и возрадуйтесь.",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "the sons of men ",
+        "IsOptional": false
+      },
+      {
+        "FullText": "библейское",
+        "Node": "Abbrev",
+        "Text": "библ.",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— сыны человеческие; род человеческий; человечество, люди",
+        "IsOptional": false
+      }
+    ]
+  },
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "son of a bitch ",
+        "IsOptional": false
+      },
+      {
+        "FullText": "грубое",
+        "Node": "Abbrev",
+        "Text": "груб.",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— сукин сын",
+        "IsOptional": false
+      }
+    ]
+  }
+]

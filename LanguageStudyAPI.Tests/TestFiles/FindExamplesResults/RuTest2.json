@@ -1,0 +1,69 @@
+[
+  {
+    "Markup": [
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "убер",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": true,
+        "Node": "Text",
+        "Text": "и ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": true,
+        "Node": "Text",
+        "Text": "э",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "ту кн",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": true,
+        "Node": "Text",
+        "Text": "и",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "гу под",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": true,
+        "Node": "Text",
+        "Text": "а",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "льше ",
+        "IsOptional": false
+      },
+      {
+        "IsItalics": false,
+        "IsAccent": false,
+        "Node": "Text",
+        "Text": "— put this book as far away as you can",
+        "IsOptional": false
+      }
+    ]
+  }
+]

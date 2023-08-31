@@ -7,6 +7,7 @@ namespace LanguageStudyAPI.Services
         //Task<bool> AuthenticateAsync();
         Task<string> GetTranslationAsync(string text, string srcLang, string dstLang, bool isCaseSensitive);
         Task<List<LexemeExample>> GetExamplesFromTranslationAsync(string text, string srcLang, string dstLang, bool isCaseSensitive);
+        Task<string> GetSoundAsync(string dictionaryName, string fileName);
 
     }
 }

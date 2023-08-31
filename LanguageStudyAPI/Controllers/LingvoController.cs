@@ -1,6 +1,8 @@
 ﻿using LanguageStudyAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace LanguageStudyAPI.Controllers
 {
@@ -41,6 +43,40 @@ namespace LanguageStudyAPI.Controllers
             var result = JsonConvert.SerializeObject(examples);
             return Ok(result);
 
+        }
+
+        [HttpGet("Sound")]
+        public async Task<IActionResult> LingvoSound(string dictionaryName, string fileName)
+        {
+            if (string.IsNullOrEmpty(dictionaryName) || string.IsNullOrEmpty(fileName))
+            {
+                return BadRequest("dictionaryName or/and fileName are null or empty.");
+            }
+
+            var result = await _lingvoService.GetSoundAsync(dictionaryName, fileName);
+
+            // TODO Make Audio Service
+            byte[] audioBytes = Convert.FromBase64String(result.Replace("\"", ""));
+
+            string filePath = @"C:\Users\leisu\Desktop\audio.wav";  // Correct this path
+            System.IO.File.WriteAllBytes(filePath, audioBytes);
+
+            return Ok(result);
+        }
+
+        private string FindMissingSymbols(string original, string cleaned)
+        {
+            StringBuilder missingSymbols = new StringBuilder();
+
+            foreach (char c in original)
+            {
+                if (!cleaned.Contains(c.ToString()))
+                {
+                    missingSymbols.Append(c);
+                }
+            }
+
+            return missingSymbols.ToString();
         }
     }
 }

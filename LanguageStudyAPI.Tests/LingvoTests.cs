@@ -10,45 +10,45 @@ namespace LanguageStudyAPI.Tests
 {
     public class LingvoTests
     {
-        [Fact]
-        public async Task AuthenticateAsync_ShouldReturnTrue_WhenAuthenticationIsSuccessful()
-        {
-            // Arrange
-            var mockFactory = new Mock<IHttpClientFactory>();
-            var mockHttpMessageHandler = new Mock<HttpMessageHandler>();
-            mockHttpMessageHandler
-                .Protected()
-                .Setup<Task<HttpResponseMessage>>(
-                    "SendAsync",
-                    ItExpr.IsAny<HttpRequestMessage>(),
-                    ItExpr.IsAny<CancellationToken>()
-                )
-                .ReturnsAsync(new HttpResponseMessage
-                {
-                    StatusCode = HttpStatusCode.OK,
-                    Content = new StringContent("\"someToken\""),
-                });
+    //    [Fact]
+    //    public async Task AuthenticateAsync_ShouldReturnTrue_WhenAuthenticationIsSuccessful()
+    //    {
+    //        // Arrange
+    //        var mockFactory = new Mock<IHttpClientFactory>();
+    //        var mockHttpMessageHandler = new Mock<HttpMessageHandler>();
+    //        mockHttpMessageHandler
+    //            .Protected()
+    //            .Setup<Task<HttpResponseMessage>>(
+    //                "SendAsync",
+    //                ItExpr.IsAny<HttpRequestMessage>(),
+    //                ItExpr.IsAny<CancellationToken>()
+    //            )
+    //            .ReturnsAsync(new HttpResponseMessage
+    //            {
+    //                StatusCode = HttpStatusCode.OK,
+    //                Content = new StringContent("\"someToken\""),
+    //            });
 
-            var client = new HttpClient(mockHttpMessageHandler.Object)
-            {
-                BaseAddress = new Uri("https://developers.lingvolive.com/")
-            };
-            mockFactory.Setup(_ => _.CreateClient(It.IsAny<string>())).Returns(client);
+    //        var client = new HttpClient(mockHttpMessageHandler.Object)
+    //        {
+    //            BaseAddress = new Uri("https://developers.lingvolive.com/")
+    //        };
+    //        mockFactory.Setup(_ => _.CreateClient(It.IsAny<string>())).Returns(client);
 
-            var config = new ConfigurationBuilder()
-                .AddInMemoryCollection(new List<KeyValuePair<string, string>> {
-            new KeyValuePair<string, string>("LingvoApi:ApiKey", "someApiKey")
-                })
-                .Build();
+    //        var config = new ConfigurationBuilder()
+    //            .AddInMemoryCollection(new List<KeyValuePair<string, string>> {
+    //        new KeyValuePair<string, string>("LingvoApi:ApiKey", "someApiKey")
+    //            })
+    //            .Build();
 
-            var service = new LingvoApiService(mockFactory.Object, config);
+    //        var service = new LingvoApiService(mockFactory.Object, config);
 
-            // Act
-            var result = await service.AuthenticateAsync();
+    //        // Act
+    //        var result = await service.AuthenticateAsync();
 
-            // Assert
-            Assert.True(result);
-        }
+    //        // Assert
+    //        Assert.True(result);
+    //    }
 
         [Theory]
         [InlineData("envelope.json")]

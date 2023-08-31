@@ -44,7 +44,7 @@ namespace LanguageStudyAPI.Services
 
         public async Task<string> GetSoundAsync(string dictionaryName, string fileName)
         {
-            string requestUrl = $"api/v1/Translation?dictionaryName={dictionaryName}&fileName={fileName}";
+            string requestUrl = $"api/v1/Sound?dictionaryName={dictionaryName}&fileName={fileName}";
             HttpResponseMessage response = await _client.GetAsync(requestUrl);
 
             if (response.IsSuccessStatusCode)
@@ -105,7 +105,7 @@ namespace LanguageStudyAPI.Services
                         {
                             if (markup.Node == "Text")
                             {
-                                lexeme.Translation = new LexemeTranslation { Text = markup.Text };
+                                lexeme.Translations.Add(new LexemeTranslation { Text = markup.Text });
                             }
                         }
                     }

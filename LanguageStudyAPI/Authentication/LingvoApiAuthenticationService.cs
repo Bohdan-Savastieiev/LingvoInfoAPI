@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
-using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http.Headers;
+using System.Security.Authentication;
 
 namespace LanguageStudyAPI.Authentication
 {
@@ -30,10 +30,9 @@ namespace LanguageStudyAPI.Authentication
                 response.EnsureSuccessStatusCode();
 
                 token = await response.Content.ReadAsStringAsync();
-                // todo new exception
                 if (string.IsNullOrEmpty(token))
                 {
-                    throw new Exception("Authentication failed");
+                    throw new AuthenticationException("Lingvo API authentication failed");
                 }
 
                 var tokenExpiration = new DateTimeOffset(DateTime.UtcNow.AddMinutes(_tokenLongivity));

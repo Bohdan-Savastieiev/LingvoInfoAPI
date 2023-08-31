@@ -2,20 +2,26 @@
 {
     public class LexemeModel
     {
-        public string Text;
-        public List<LexemeExample> Examples;
-        public LexemeTranslation Translation;
+        public string Text { get; set; }
+        public List<LexemeExample> Examples { get; set; }
+        public List<LexemeTranslation> Translations { get; set; }
+
+        public LexemeModel()
+        {
+            Examples = new List<LexemeExample>();
+            Translations = new List<LexemeTranslation>();
+        }
 
     }
     public class LexemeExample
     {
-        public string NativeExample;
-        public string TranslatedExample;
+        public string NativeExample { get; set; }
+        public string TranslatedExample { get; set; }
     }
     public class LexemeTranslation
     {
-        public string Text;
-        public string Transcription;
+        public string Text { get; set; }
+        public string Transcription { get; set; }
 
     }
 }

@@ -55,28 +55,32 @@ namespace LanguageStudyAPI.Controllers
 
             var result = await _lingvoService.GetSoundAsync(dictionaryName, fileName);
 
-            // TODO Make Audio Service
-            byte[] audioBytes = Convert.FromBase64String(result.Replace("\"", ""));
+            // TODO Make Audio Service in client
+            //byte[] audioBytes = Convert.FromBase64String(result.Replace("\"", ""));
 
-            string filePath = @"C:\Users\leisu\Desktop\audio.wav";  // Correct this path
-            System.IO.File.WriteAllBytes(filePath, audioBytes);
+            //string filePath = @"C:\Users\leisu\Desktop\audio.wav";  // Correct this path
+            //System.IO.File.WriteAllBytes(filePath, audioBytes);
 
             return Ok(result);
         }
 
-        private string FindMissingSymbols(string original, string cleaned)
+        [HttpGet("SoundFileNames")]
+        public async Task<IActionResult> LingvoSoundFileNames(string text, string srcLang, string dstLang, bool isCaseSensitive)
         {
-            StringBuilder missingSymbols = new StringBuilder();
-
-            foreach (char c in original)
+            if (string.IsNullOrEmpty(text) || string.IsNullOrEmpty(srcLang) || string.IsNullOrEmpty(dstLang))
             {
-                if (!cleaned.Contains(c.ToString()))
-                {
-                    missingSymbols.Append(c);
-                }
+                return BadRequest("Lexeme, source language, and destination language are required.");
             }
 
-            return missingSymbols.ToString();
+            var result = await _lingvoService.GetSoundFileNamesAsync(text, srcLang, dstLang, isCaseSensitive);
+
+            // TODO Make Audio Service in client
+            //byte[] audioBytes = Convert.FromBase64String(result.Replace("\"", ""));
+
+            //string filePath = @"C:\Users\leisu\Desktop\audio.wav";  // Correct this path
+            //System.IO.File.WriteAllBytes(filePath, audioBytes);
+
+            return Ok(result);
         }
     }
 }

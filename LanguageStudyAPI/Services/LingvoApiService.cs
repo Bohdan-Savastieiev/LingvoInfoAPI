@@ -9,6 +9,7 @@ using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc.Routing;
 using System.Runtime.CompilerServices;
 using static System.Net.Mime.MediaTypeNames;
+using static LanguageStudyAPI.Models.LingueeModel;
 
 namespace LanguageStudyAPI.Services
 {
@@ -27,7 +28,12 @@ namespace LanguageStudyAPI.Services
 
             if (response.IsSuccessStatusCode)
             {
-                return await response.Content.ReadAsStringAsync();
+                string content = await response.Content.ReadAsStringAsync();
+                
+
+                var rootObject = JsonConvert.DeserializeObject<List<LanguageStudyAPI.Models.ArticleModel>>(content);
+                return content;
+
             }
             else
             {
@@ -40,6 +46,14 @@ namespace LanguageStudyAPI.Services
             var responseJArray = JArray.Parse(response);
             var examples = FindAllExampleNodes(responseJArray);
             return ConvertToLexemeExamples(examples);
+        }
+
+        public async Task<List<string>> GetSoundFileNamesAsync(string text, string srcLang, string dstLang, bool isCaseSensitive)
+        {
+            string response = await GetTranslationAsync(text, srcLang, dstLang, isCaseSensitive);
+            var responseJArray = JArray.Parse(response);
+            var examples = FindSoundFileNames(responseJArray);
+            return examples;
         }
 
         public async Task<string> GetSoundAsync(string dictionaryName, string fileName)
@@ -55,6 +69,33 @@ namespace LanguageStudyAPI.Services
             {
                 throw new HttpRequestException($"Error calling Lingvo API: {response.ReasonPhrase}");
             }
+        }
+
+        private List<string> FindSoundFileNames(JToken token)
+        {
+            List<string> results = new List<string>();
+
+            // Если текущий токен является объектом JObject и содержит "Node": "Example"
+            if (token is JObject jObject && jObject["Node"]?.ToString() == "Sound")
+            {
+                var fileName = jObject["FileName"]?.ToString();
+                if (fileName != null)
+                {
+                    results.Add(fileName);
+                }
+                //results.Add(jObject);
+            }
+
+            // Если у элемента есть дочерние элементы и это не JValue, проверьте их рекурсивно
+            if (!(token is JValue))
+            {
+                foreach (var child in token.Children())
+                {
+                    results.AddRange(FindSoundFileNames(child));
+                }
+            }
+
+            return results;
         }
 
         public static List<LexemeExample> ConvertToLexemeExamples(List<JToken> examples)

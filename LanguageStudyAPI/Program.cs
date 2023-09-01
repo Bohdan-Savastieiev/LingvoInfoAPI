@@ -16,7 +16,7 @@ builder.Services.AddScoped<GoogleTranslationAPIService>();
 builder.Services.AddScoped<LingueeApiService>();
 builder.Services.AddHttpClient<LingueeApiService>(client =>
 {
-    client.BaseAddress = new Uri(builder.Configuration["LingueeApi:BaseUri"]
+    client.BaseAddress = new Uri(builder.Configuration["LingueeApi:BaseUrl"]
         ?? throw new ArgumentNullException("Linguee API Base URI wasn't found in configuration settings"));
 });
 

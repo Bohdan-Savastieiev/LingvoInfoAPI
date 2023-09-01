@@ -3,6 +3,8 @@
     public class LexemeModel
     {
         public string Text { get; set; }
+        public string Transcription { get; set; }
+        public string Sound { get; set; }
         public List<LexemeExample> Examples { get; set; }
         public List<LexemeTranslation> Translations { get; set; }
 

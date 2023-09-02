@@ -82,5 +82,18 @@ namespace LanguageStudyAPI.Controllers
 
             return Ok(result);
         }
+
+        [HttpGet("WordForms")]
+        public async Task<IActionResult> LingvoWordForms(string text, string lang)
+        {
+            if (string.IsNullOrEmpty(text) || string.IsNullOrEmpty(lang))
+            {
+                return BadRequest("Lexeme and language are required.");
+            }
+
+            var result = await _lingvoService.GetWordFormsAsync(text, lang);
+
+            return Ok(result);
+        }
     }
 }

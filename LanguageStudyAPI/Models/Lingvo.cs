@@ -37,13 +37,13 @@ namespace LanguageStudyAPI.Models
     {
         // Node
         public NodeType NodeType { get; set; }
-        public string Text { get; set; }
+        public string? Text { get; set; }
         public bool IsOptional { get; set; }
     }
 
     public class CommentNode : Node
     {
-        public List<TextNode> Markup;
+        public List<Node> Markup;
     }
     public class ParagraphNode : Node
     {
@@ -65,7 +65,8 @@ namespace LanguageStudyAPI.Models
     }
     public class ExamplesNode : Node
     {
-        public List<ExampleItemNode> Examples { get; set; }
+        public int? Type { get; set; }
+        public List<ExampleItemNode> Items { get; set; }
     }
     public class ExampleItemNode : Node
     {
@@ -73,12 +74,12 @@ namespace LanguageStudyAPI.Models
     }
     public class ExampleNode : Node
     {
-        public List<TextNode> Markup { get; set; }
+        public List<Node> Markup { get; set; }
     }
     public class CardRefsNode : Node
     {
         public int? Type { get; set; }
-        public List<CardRefItemNode> Markup { get; set; }
+        public List<CardRefItemNode> Items { get; set; }
     }
     public class CardRefItemNode : Node
     {
@@ -101,42 +102,4 @@ namespace LanguageStudyAPI.Models
     }  
     public class RefNode : Node { }
     public class UnsupportedNode : Node { }
-
-    // These nodes contain no additional properties
-    // NodeTypes:
-    //    Transcription = 11,
-    //    Caption = 13,
-    //    Ref = 15,
-    //    Unsupported = 16
-    // public class EmptyNode : Node { }
-
-    //public enum UniqueNodeType
-    //{
-    //    Text = 2,
-    //    List = 3,
-    //    Examples = 5,
-    //    CardRefs = 8,
-    //    CardRefItem = 9,
-    //    CardRef = 10,
-    //    Abbrev = 12,
-    //    Sound = 14,
-    //}
-    //public enum ContainsNodesNodeType
-    //{
-    //    Paragraph = 1,
-    //    ListItem = 4,
-    //    ExampleItem = 6
-    //}
-    //public enum ContainsTextsNodeType
-    //{
-    //    Comment = 0,
-    //    Example = 7,
-    //}
-    //public enum ContainsNothingNodeType
-    //{
-    //    Transcription = 11,
-    //    Caption = 13,
-    //    Ref = 15,
-    //    Unsupported = 16
-    //}
 }

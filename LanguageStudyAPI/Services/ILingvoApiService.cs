@@ -9,5 +9,6 @@ namespace LanguageStudyAPI.Services
         Task<List<LexemeExample>> GetExamplesFromTranslationAsync(string text, string srcLang, string dstLang, bool isCaseSensitive);
         Task<string> GetSoundAsync(string dictionaryName, string fileName);
         Task<List<string>> GetSoundFileNamesAsync(string text, string srcLang, string dstLang, bool isCaseSensitive);
+        Task<string> GetWordFormsAsync(string text, string lang);
     }
 }

@@ -31,7 +31,7 @@ namespace LanguageStudyAPI.Services
                 string content = await response.Content.ReadAsStringAsync();
                 
 
-                var rootObject = JsonConvert.DeserializeObject<List<LanguageStudyAPI.Models.ArticleModel>>(content);
+                var rootObject = JsonConvert.DeserializeObject<List<ArticleModel>>(content);
                 var serialized = JsonConvert.SerializeObject(rootObject);
                 string filePath = @"C:\Users\leisu\Desktop\serialized.json";  // Correct this path
                 System.IO.File.WriteAllText(filePath, serialized);
@@ -62,6 +62,21 @@ namespace LanguageStudyAPI.Services
         public async Task<string> GetSoundAsync(string dictionaryName, string fileName)
         {
             string requestUrl = $"api/v1/Sound?dictionaryName={dictionaryName}&fileName={fileName}";
+            HttpResponseMessage response = await _client.GetAsync(requestUrl);
+
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadAsStringAsync();
+            }
+            else
+            {
+                throw new HttpRequestException($"Error calling Lingvo API: {response.ReasonPhrase}");
+            }
+        }
+
+        public async Task<string> GetWordFormsAsync(string text, string lang)
+        {
+            string requestUrl = $"api/v1/WordForms?text={text}&lang={lang}";
             HttpResponseMessage response = await _client.GetAsync(requestUrl);
 
             if (response.IsSuccessStatusCode)

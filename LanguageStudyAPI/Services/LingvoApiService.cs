@@ -32,6 +32,9 @@ namespace LanguageStudyAPI.Services
                 
 
                 var rootObject = JsonConvert.DeserializeObject<List<LanguageStudyAPI.Models.ArticleModel>>(content);
+                var serialized = JsonConvert.SerializeObject(rootObject);
+                string filePath = @"C:\Users\leisu\Desktop\serialized.json";  // Correct this path
+                System.IO.File.WriteAllText(filePath, serialized);
                 return content;
 
             }

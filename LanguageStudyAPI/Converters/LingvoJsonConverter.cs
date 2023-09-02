@@ -1,6 +1,7 @@
 ﻿using LanguageStudyAPI.Models;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
+using Google.Apis.Services;
 
 namespace LanguageStudyAPI.Converters
 {
@@ -80,7 +81,15 @@ namespace LanguageStudyAPI.Converters
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            throw new NotImplementedException();
+            // Default serialization
+            JToken token = JToken.FromObject(value, new JsonSerializer
+            {
+                // Configure the serializer as needed; or leave it as is for default settings
+            });
+            token.WriteTo(writer);
         }
+
+
+
     }
 }

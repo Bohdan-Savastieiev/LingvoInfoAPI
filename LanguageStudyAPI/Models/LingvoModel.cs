@@ -1,163 +1,104 @@
-﻿using Newtonsoft.Json;
+﻿using LanguageStudyAPI.Converters;
+using Newtonsoft.Json;
 
-namespace LanguageStudyAPI.Models
+namespace LanguageStudyAPI.Models.Lingvo;
+
+public enum NodeType
 {
-    // Root myDeserializedClass = JsonConvert.DeserializeObject<List<Root>>(myJsonResponse);
-    public partial class LingvoModel
-    {
-        [JsonProperty("Title")]
-        public string Text { get; set; }
-
-        //[JsonProperty("TitleMarkup")]
-        //public Markup[] TitleMarkup { get; set; }
-
-        //[JsonProperty("Dictionary")]
-        //public string Dictionary { get; set; }
-
-        //[JsonProperty("ArticleId")]
-        //public string ArticleId { get; set; }
-
-        [JsonProperty("Body")]
-        public Body[] Body { get; set; }
-    }
-
-    public partial class Body
-    {
-        [JsonProperty("Markup", NullValueHandling = NullValueHandling.Ignore)]
-        public BodyMarkup[] Markup { get; set; }
-
-        [JsonProperty("Node")]
-        public string Node { get; set; }
-
-        [JsonProperty("Text")]
-        public object Text { get; set; }
-
-        [JsonProperty("IsOptional")]
-        public bool IsOptional { get; set; }
-
-        [JsonProperty("Type", NullValueHandling = NullValueHandling.Ignore)]
-        public long? Type { get; set; }
-
-        [JsonProperty("Items", NullValueHandling = NullValueHandling.Ignore)]
-        public BodyItem[] Items { get; set; }
-    }
-
-    public partial class BodyItem
-    {
-        [JsonProperty("Markup")]
-        public PurpleMarkup[] Markup { get; set; }
-
-        [JsonProperty("Node")]
-        public string Node { get; set; }
-
-        [JsonProperty("Text")]
-        public object Text { get; set; }
-
-        [JsonProperty("IsOptional")]
-        public bool IsOptional { get; set; }
-    }
-
-    public partial class PurpleMarkup
-    {
-        [JsonProperty("Markup", NullValueHandling = NullValueHandling.Ignore)]
-        public BodyMarkup[] Markup { get; set; }
-
-        [JsonProperty("Node")]
-        public string Node { get; set; }
-
-        [JsonProperty("Text")]
-        public object Text { get; set; }
-
-        [JsonProperty("IsOptional")]
-        public bool IsOptional { get; set; }
-
-        [JsonProperty("Type")]
-        public object Type { get; set; }
-
-        [JsonProperty("Items", NullValueHandling = NullValueHandling.Ignore)]
-        public MarkupItem[] Items { get; set; }
-    }
-
-    public partial class MarkupItem
-    {
-        [JsonProperty("Markup")]
-        public FluffyMarkup[] Markup { get; set; }
-
-        [JsonProperty("Node")]
-        public string Node { get; set; }
-
-        [JsonProperty("Text")]
-        public object Text { get; set; }
-
-        [JsonProperty("IsOptional")]
-        public bool IsOptional { get; set; }
-    }
-
-    public partial class FluffyMarkup
-    {
-        [JsonProperty("Markup", NullValueHandling = NullValueHandling.Ignore)]
-        public Markup[] Markup { get; set; }
-
-        [JsonProperty("Node")]
-        public string Node { get; set; }
-
-        [JsonProperty("Text")]
-        public string Text { get; set; }
-
-        [JsonProperty("IsOptional")]
-        public bool IsOptional { get; set; }
-
-        [JsonProperty("Dictionary", NullValueHandling = NullValueHandling.Ignore)]
-        public string Dictionary { get; set; }
-
-        [JsonProperty("ArticleId", NullValueHandling = NullValueHandling.Ignore)]
-        public string ArticleId { get; set; }
-    }
-
-    public partial class Markup
-    {
-        [JsonProperty("IsItalics")]
-        public bool IsItalics { get; set; }
-
-        [JsonProperty("IsAccent")]
-        public bool IsAccent { get; set; }
-
-        [JsonProperty("Node")]
-        public string Node { get; set; }
-
-        [JsonProperty("Text")]
-        public string Text { get; set; }
-
-        [JsonProperty("IsOptional")]
-        public bool IsOptional { get; set; }
-    }
-
-    public partial class BodyMarkup
-    {
-        [JsonProperty("FullText", NullValueHandling = NullValueHandling.Ignore)]
-        public string FullText { get; set; }
-
-        [JsonProperty("Node")]
-        public string Node { get; set; }
-
-        [JsonProperty("Text")]
-        public string Text { get; set; }
-
-        [JsonProperty("IsOptional")]
-        public bool IsOptional { get; set; }
-
-        [JsonProperty("IsItalics", NullValueHandling = NullValueHandling.Ignore)]
-        public bool? IsItalics { get; set; }
-
-        [JsonProperty("IsAccent", NullValueHandling = NullValueHandling.Ignore)]
-        public bool? IsAccent { get; set; }
-
-        [JsonProperty("Markup", NullValueHandling = NullValueHandling.Ignore)]
-        public Markup[] Markup { get; set; }
-
-        [JsonProperty("FileName", NullValueHandling = NullValueHandling.Ignore)]
-        public string FileName { get; set; }
-    }
-
-
+    Comment = 0,
+    Paragraph = 1,
+    Text = 2,
+    List = 3,
+    ListItem = 4,
+    Examples = 5,
+    ExampleItem = 6,
+    Example = 7,
+    CardRefs = 8,
+    CardRefItem = 9,
+    CardRef = 10,
+    Transcription = 11,
+    Abbrev = 12,
+    Caption = 13,
+    Sound = 14,
+    Ref = 15,
+    Unsupported = 16
 }
+public class ArticleModel
+{
+    public string Title { get; set; }
+    public List<Node> TitleMarkup { get; set; }
+    public string Dictionary { get; set; }
+    public string ArticleId { get; set; }
+    public List<Node> Body { get; set; }
+}
+
+[JsonConverter(typeof(LingvoJsonConverter))]
+public class Node
+{
+    // Node
+    public NodeType NodeType { get; set; }
+    public string? Text { get; set; }
+    public bool IsOptional { get; set; }
+}
+
+public class CommentNode : Node
+{
+    public List<Node> Markup;
+}
+public class ParagraphNode : Node
+{
+    public List<Node> Markup;
+}
+public class TextNode : Node
+{
+    public bool IsItalics { get; set; }
+    public bool IsAccent { get; set; }
+}
+public class ListNode : Node
+{
+    public int? Type { get; set; }
+    public List<ListItemNode> Items { get; set; }
+}
+public class ListItemNode : Node
+{
+    public List<Node> Markup { get; set; }
+}
+public class ExamplesNode : Node
+{
+    public int? Type { get; set; }
+    public List<ExampleItemNode> Items { get; set; }
+}
+public class ExampleItemNode : Node
+{
+    public List<Node> Markup { get; set; }
+}
+public class ExampleNode : Node
+{
+    public List<Node> Markup { get; set; }
+}
+public class CardRefsNode : Node
+{
+    public int? Type { get; set; }
+    public List<CardRefItemNode> Items { get; set; }
+}
+public class CardRefItemNode : Node
+{
+    public List<CardRefNode> Markup { get; set; }
+}
+public class CardRefNode : Node
+{
+    public string Dictionary { get; set; }
+    public string ArticleId { get; set; }
+}
+public class TranscriptionNode : Node { }
+public class AbbrevNode : Node
+{
+    public string FullText { get; set; }
+}
+public class CaptionNode : Node { }
+public class SoundNode : Node
+{
+    public string FileName { get; set; }
+}  
+public class RefNode : Node { }
+public class UnsupportedNode : Node { }

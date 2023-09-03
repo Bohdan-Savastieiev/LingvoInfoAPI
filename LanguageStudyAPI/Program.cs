@@ -1,5 +1,8 @@
 using LanguageStudyAPI.Authentication;
+using LanguageStudyAPI.Mappers;
 using LanguageStudyAPI.Services;
+using LingvoInfoAPI.Services;
+using Mapster;
 using Microsoft.Extensions.Caching.Memory;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,10 +14,19 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddMemoryCache();
 
+MapsterConfig.Configure();
+//var config = TypeAdapterConfig.GlobalSettings;
+
+//var config = new TypeAdapterConfig();
+//config.NewConfig<Student, StudentDTO>()
+//    .Map(dest => dest.Name, src => src.FullName);
+
+builder.Services.AddScoped<ILingvoInfoService, LingvoInfoService>();
+
 builder.Services.AddScoped<GoogleTranslationAPIService>();
 
 builder.Services.AddScoped<LingueeApiService>();
-builder.Services.AddHttpClient<LingueeApiService>(client =>
+builder.Services.AddHttpClient("LingueeApi", client =>
 {
     client.BaseAddress = new Uri(builder.Configuration["LingueeApi:BaseUrl"]
         ?? throw new ArgumentNullException("Linguee API Base URI wasn't found in configuration settings"));
@@ -24,9 +36,9 @@ builder.Services.AddScoped<ILingvoApiService, LingvoApiService>();
 
 builder.Services.AddScoped<LingvoApiAuthenticationHandler>();
 
-builder.Services.AddHttpClient("LingvoApi", c =>
+builder.Services.AddHttpClient("LingvoApi", client =>
 {
-    c.BaseAddress = new Uri(builder.Configuration["LingvoApi:BaseUrl"]
+    client.BaseAddress = new Uri(builder.Configuration["LingvoApi:BaseUrl"]
         ?? throw new InvalidOperationException("BaseUrl for Lingvo API is not configured."));
 })
 .AddHttpMessageHandler<LingvoApiAuthenticationHandler>();

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanguageStudyAPI", "LanguageStudyAPI\LanguageStudyAPI.csproj", "{41576627-EEF0-49B0-A2C9-2D401819CB63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LingvoInfoAPI", "LanguageStudyAPI\LingvoInfoAPI.csproj", "{41576627-EEF0-49B0-A2C9-2D401819CB63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageStudyAPI.Tests", "LanguageStudyAPI.Tests\LanguageStudyAPI.Tests.csproj", "{9055B5EF-50CA-4C7B-99C9-EF5791D24893}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LingvoInfoAPI.Tests", "LanguageStudyAPI.Tests\LingvoInfoAPI.Tests.csproj", "{9055B5EF-50CA-4C7B-99C9-EF5791D24893}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

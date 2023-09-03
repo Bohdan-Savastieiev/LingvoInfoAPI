@@ -2,6 +2,8 @@
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using Google.Apis.Services;
+using LanguageStudyAPI.Models.Lingvo;
+
 
 namespace LanguageStudyAPI.Converters
 {

@@ -1,40 +1,66 @@
-﻿namespace LanguageStudyAPI.Models
+﻿using Newtonsoft.Json;
+
+namespace LanguageStudyAPI.Models.Linguee;
+// Root myDeserializedClass = JsonConvert.DeserializeObject<List<Root>>(myJsonResponse);
+public class LingueeModel
 {
-    public class LingueeModel
-    {
-        // Root myDeserializedClass = JsonConvert.DeserializeObject<List<Root>>(myJsonResponse);
-        public class AudioLink
-        {
-            public string url { get; set; }
-            public string lang { get; set; }
-        }
+    [JsonProperty("featured")]
+    public bool Featured { get; set; }
 
-        public class Example
-        {
-            public string src { get; set; }
-            public string dst { get; set; }
-        }
+    [JsonProperty("text")]
+    public string Text { get; set; }
 
-        public class Root
-        {
-            public bool featured { get; set; }
-            public string text { get; set; }
-            public string pos { get; set; }
-            public List<object> forms { get; set; }
-            public object grammarInfo { get; set; }
-            public List<AudioLink> audioLinks { get; set; }
-            public List<Translation> translations { get; set; }
-        }
+    [JsonProperty("pos")]
+    public string Pos { get; set; }
 
-        public class Translation
-        {
-            public bool featured { get; set; }
-            public string text { get; set; }
-            public string pos { get; set; }
-            public object audioLinks { get; set; }
-            public List<Example> examples { get; set; }
-            public object usageFrequency { get; set; }
-        }
+    [JsonProperty("forms")]
+    public object[] Forms { get; set; }
 
-    }
+    [JsonProperty("grammar_info")]
+    public object GrammarInfo { get; set; }
+
+    [JsonProperty("audio_links")]
+    public AudioLink[] AudioLinks { get; set; }
+
+    [JsonProperty("translations")]
+    public Translation[] Translations { get; set; }
+}
+
+public class AudioLink
+{
+    [JsonProperty("url")]
+    public Uri Url { get; set; }
+
+    [JsonProperty("lang")]
+    public string Lang { get; set; }
+}
+
+public class Translation
+{
+    [JsonProperty("featured")]
+    public bool Featured { get; set; }
+
+    [JsonProperty("text")]
+    public string Text { get; set; }
+
+    [JsonProperty("pos")]
+    public string Pos { get; set; }
+
+    [JsonProperty("audio_links")]
+    public object AudioLinks { get; set; }
+
+    [JsonProperty("examples")]
+    public Example[] Examples { get; set; }
+
+    [JsonProperty("usage_frequency")]
+    public string UsageFrequency { get; set; }
+}
+
+public class Example
+{
+    [JsonProperty("src")]
+    public string Src { get; set; }
+
+    [JsonProperty("dst")]
+    public string Dst { get; set; }
 }

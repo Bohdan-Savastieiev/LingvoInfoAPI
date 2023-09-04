@@ -35,8 +35,9 @@ public class LingvoApiService : ILingvoApiService
             string content = await response.Content.ReadAsStringAsync();
             
 
-            var rootObject = JsonConvert.DeserializeObject<List<ArticleModel>>(content);
+            var rootObject = JsonConvert.DeserializeObject<List<LingvoDto>>(content);
             var serialized = JsonConvert.SerializeObject(rootObject);
+            var universalObj = rootObject.Where(x => x.Dictionary.Contains("Universal", StringComparison.InvariantCultureIgnoreCase)).ToList();
             string filePath = @"C:\Users\leisu\Desktop\serialized.json";  // Correct this path
             System.IO.File.WriteAllText(filePath, serialized);
             return content;

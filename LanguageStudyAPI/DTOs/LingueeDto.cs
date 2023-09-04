@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 
-namespace LanguageStudyAPI.Models.Linguee;
-// Root myDeserializedClass = JsonConvert.DeserializeObject<List<Root>>(myJsonResponse);
-public class LingueeModel
+namespace LingvoInfoAPI.DTOs;
+
+public class LingueeDto
 {
     [JsonProperty("featured")]
     public bool Featured { get; set; }

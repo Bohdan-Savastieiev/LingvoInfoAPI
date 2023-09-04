@@ -1,5 +1,6 @@
 ﻿using System.Net;
-using LanguageStudyAPI.Models.Linguee;
+using LanguageStudyAPI.Models;
+using LingvoInfoAPI.DTOs;
 using Newtonsoft.Json;
 
 namespace LanguageStudyAPI.Services;
@@ -19,14 +20,11 @@ public class LingueeApiService
 
         HttpResponseMessage response = await _httpClient.GetAsync(requestUrl);
 
-        // Check for redirect status code
         if (response.StatusCode == HttpStatusCode.TemporaryRedirect)
         {
-            // Get the new URI from the Location header
             var newUri = response.Headers.Location;
             if (newUri != null)
             {
-                // Make a new request to the redirected URI
                 response = await _httpClient.GetAsync(newUri);
             }
         }
@@ -34,7 +32,7 @@ public class LingueeApiService
         if (response.IsSuccessStatusCode)
         {
             string responseBody = await response.Content.ReadAsStringAsync();
-            List<LingueeModel> lemmas = JsonConvert.DeserializeObject<List<LingueeModel>>(responseBody);
+            List<LingueeDto> lemmas = JsonConvert.DeserializeObject<List<LingueeDto>>(responseBody);
             return responseBody;
         }
         else

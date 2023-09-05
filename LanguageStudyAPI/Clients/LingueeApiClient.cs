@@ -1,23 +1,20 @@
-﻿using System.Net;
-using LanguageStudyAPI.Models;
-using LingvoInfoAPI.DTOs;
+﻿using LingvoInfoAPI.DTOs;
 using Newtonsoft.Json;
+using System.Net;
 
-namespace LanguageStudyAPI.Services;
-
-public class LingueeApiService
+namespace LingvoInfoAPI.Clients;
+public class LingueeApiClient
 {
     private readonly HttpClient _httpClient;
 
-    public LingueeApiService(IHttpClientFactory httpClientFactory)
+    public LingueeApiClient(IHttpClientFactory httpClientFactory)
     {
         _httpClient = httpClientFactory.CreateClient("LingueeApi");
     }
 
-    public async Task<string> TranslateWordAsync(string query, string src, string dst)
+    public async Task<List<LingueeDto>> TranslateWordAsync(string query, string src, string dst)
     {
         string requestUrl = $"translations/?query={query}&src={src}&dst={dst}";
-
         HttpResponseMessage response = await _httpClient.GetAsync(requestUrl);
 
         //if (response.StatusCode == HttpStatusCode.TemporaryRedirect)
@@ -32,12 +29,17 @@ public class LingueeApiService
         if (response.IsSuccessStatusCode)
         {
             string responseBody = await response.Content.ReadAsStringAsync();
-            List<LingueeDto> lemmas = JsonConvert.DeserializeObject<List<LingueeDto>>(responseBody);
-            return responseBody;
+            List<LingueeDto> result = JsonConvert.DeserializeObject<List<LingueeDto>>(responseBody);
+            return result;
+        }
+        else if (response.StatusCode == HttpStatusCode.InternalServerError
+            && response.Content.ToString() == "Translation not found")
+        {
+            return new List<LingueeDto>();
         }
         else
         {
-            return string.Empty;
+            throw new HttpRequestException(response.Content.ToString());
         }
     }
 }

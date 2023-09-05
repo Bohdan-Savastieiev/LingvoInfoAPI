@@ -1,4 +1,5 @@
 ﻿using LanguageStudyAPI.Services;
+using LingvoInfoAPI.Clients;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Text;
@@ -11,9 +12,12 @@ namespace LanguageStudyAPI.Controllers
     public class LingvoController : Controller
     {
         private ILingvoApiService _lingvoService;
-        public LingvoController(ILingvoApiService lingvoService)
+        private LingvoApiClient _lingvoApiClient;
+        public LingvoController(ILingvoApiService lingvoService,
+            LingvoApiClient lingvoApiClient)
         {
             _lingvoService = lingvoService;
+            _lingvoApiClient = lingvoApiClient;
         }
 
         [HttpGet("Translation")]
@@ -91,7 +95,7 @@ namespace LanguageStudyAPI.Controllers
                 return BadRequest("Lexeme and language are required.");
             }
 
-            var result = await _lingvoService.GetWordFormsAsync(text, lang);
+            var result = await _lingvoApiClient.GetWordFormsAsync(text, lang);
 
             return Ok(result);
         }

@@ -23,7 +23,7 @@ public enum NodeType
     Ref = 15,
     Unsupported = 16
 }
-public class LingvoDto
+public class LingvoTranslationsDto
 {
     public string Title { get; set; }
     public List<Node> TitleMarkup { get; set; }

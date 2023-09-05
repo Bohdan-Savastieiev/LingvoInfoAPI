@@ -3,9 +3,9 @@ using LanguageStudyAPI.Models.Lingvo;
 
 namespace LingvoInfoAPI.Mappers
 {
-    public class LingvoToLingvoInfoMapper : ILingvoInfoMapper<LingvoDto>
+    public class LingvoToLingvoInfoMapper : ILingvoInfoMapper<LingvoTranslationsDto>
     {
-        public LingvoInfo MapToLingvoInfo(LingvoDto obj)
+        public LingvoInfo MapToLingvoInfo(LingvoTranslationsDto obj)
         {
             throw new NotImplementedException();
         }

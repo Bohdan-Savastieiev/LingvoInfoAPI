@@ -9,8 +9,8 @@ using static System.Net.Mime.MediaTypeNames;
 [Route("api/[controller]")]
 public class LingvoInfoController : ControllerBase
 {
-    private readonly LingvoInfoService _lingvoInfoService;
-    public LingvoInfoController(LingvoInfoService lingvoInfoService)
+    private readonly ILingvoInfoService _lingvoInfoService;
+    public LingvoInfoController(ILingvoInfoService lingvoInfoService)
     {
         _lingvoInfoService = lingvoInfoService;
     }

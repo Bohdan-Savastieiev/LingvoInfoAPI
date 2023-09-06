@@ -2,11 +2,11 @@
 
 namespace LingvoInfoAPI.Clients
 {
-    public class GoogleTranslationAPIClient
+    public class GoogleTranslationApiClient
     {
         private readonly TranslationClient _translationClient;
 
-        public GoogleTranslationAPIClient(IConfiguration configuration)
+        public GoogleTranslationApiClient(IConfiguration configuration)
         {
             var apiKey = configuration["GoogleCloudSettings:ApiKey"];
             _translationClient = TranslationClient.CreateFromApiKey(apiKey);

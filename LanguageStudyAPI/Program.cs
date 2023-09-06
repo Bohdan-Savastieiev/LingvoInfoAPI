@@ -3,6 +3,7 @@ using LanguageStudyAPI.Mappers;
 using LanguageStudyAPI.Services;
 using LingvoInfoAPI.Clients;
 using LingvoInfoAPI.Installers;
+using LingvoInfoAPI.Mappers;
 using LingvoInfoAPI.Services;
 using Mapster;
 using Microsoft.Extensions.Caching.Memory;
@@ -19,15 +20,18 @@ builder.Services.AddMemoryCache();
 
 // Mappers
 MapsterConfig.Configure();
+builder.Services.AddScoped<LingvoTranslationsDtoLingvoInfoMapper>();
+builder.Services.AddScoped<LingueeDtoLingvoInfoMapper>();
+builder.Services.AddScoped<LingvoWordFormsDtoMapper>();
 
 // API Clients
-builder.Services.AddScoped<GoogleTranslationAPIClient>();
+builder.Services.AddScoped<GoogleTranslationApiClient>();
 builder.Services.AddScoped<LingueeApiClient>();
 builder.Services.AddScoped<LingvoApiClient>();
 
 // Services
 builder.Services.AddScoped<ILingvoInfoService, LingvoInfoService>();
-builder.Services.AddScoped<GoogleTranslationAPIService>();
+builder.Services.AddScoped<GoogleTranslationApiService>();
 builder.Services.AddScoped<LingueeApiService>();
 builder.Services.AddScoped<ILingvoApiService, LingvoApiService>();
 

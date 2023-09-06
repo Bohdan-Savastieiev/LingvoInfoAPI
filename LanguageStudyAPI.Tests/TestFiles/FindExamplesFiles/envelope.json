@@ -1,1857 +1,1167 @@
 [
   {
-    "Title": "envelope",
-    "TitleMarkup": [
-      {
-        "IsItalics": false,
-        "IsAccent": false,
-        "Node": "Text",
-        "Text": "envelope",
-        "IsOptional": false
-      }
-    ],
-    "Dictionary": "LingvoUniversal (En-Ru)",
-    "ArticleId": "LingvoUniversal (En-Ru)__envelope",
-    "Body": [
-      {
-        "Markup": [
-          {
-            "Node": "Transcription",
-            "Text": "'envələup",
-            "IsOptional": false
-          },
-          {
-            "IsItalics": false,
-            "IsAccent": false,
-            "Node": "Text",
-            "Text": " ",
-            "IsOptional": false
-          },
-          {
-            "FullText": "британский вариант английского языка; употребляется в Великобритании",
-            "Node": "Abbrev",
-            "Text": "брит.",
-            "IsOptional": false
-          },
-          {
-            "IsItalics": false,
-            "IsAccent": false,
-            "Node": "Text",
-            "Text": " ",
-            "IsOptional": false
-          },
-          {
-            "FileName": "envelope.wav",
-            "Node": "Sound",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "IsItalics": false,
-            "IsAccent": false,
-            "Node": "Text",
-            "Text": " / ",
-            "IsOptional": false
-          },
-          {
-            "FullText": "американский вариант английского языка; употребляется в США",
-            "Node": "Abbrev",
-            "Text": "амер.",
-            "IsOptional": false
-          },
-          {
-            "IsItalics": false,
-            "IsAccent": false,
-            "Node": "Text",
-            "Text": " ",
-            "IsOptional": false
-          },
-          {
-            "FileName": "4400.wav",
-            "Node": "Sound",
-            "Text": null,
-            "IsOptional": false
-          }
-        ],
-        "Node": "Paragraph",
-        "Text": null,
-        "IsOptional": false
-      },
-      {
-        "Markup": [
-          {
-            "FullText": "имя существительное",
-            "Node": "Abbrev",
-            "Text": "сущ.",
-            "IsOptional": false
-          }
-        ],
-        "Node": "Paragraph",
-        "Text": null,
-        "IsOptional": false
-      },
-      {
-        "Type": 3,
-        "Items": [
-          {
-            "Markup": [
+    "lexem": "love",
+    "partOfSpeech": "verb",
+    "paradigmJson": {
+      "name": "love",
+      "grammar": "verb",
+      "groups": [
+        {
+          "name": "Basic forms",
+          "table": [
+            [
               {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "конверт",
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
+                "value": "Past",
+                "prefix": null,
+                "row": null
               },
               {
-                "Type": null,
-                "Items": [
-                  {
-                    "Markup": [
-                      {
-                        "Markup": [
-                          {
-                            "IsItalics": false,
-                            "IsAccent": false,
-                            "Node": "Text",
-                            "Text": "to address an envelope ",
-                            "IsOptional": false
-                          },
-                          {
-                            "IsItalics": false,
-                            "IsAccent": false,
-                            "Node": "Text",
-                            "Text": "— написать на конверте адрес",
-                            "IsOptional": false
-                          }
-                        ],
-                        "Node": "Example",
-                        "Text": null,
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "ExampleItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Markup": [
-                          {
-                            "IsItalics": false,
-                            "IsAccent": false,
-                            "Node": "Text",
-                            "Text": "to seal an envelope ",
-                            "IsOptional": false
-                          },
-                          {
-                            "IsItalics": false,
-                            "IsAccent": false,
-                            "Node": "Text",
-                            "Text": "— запечатать конверт",
-                            "IsOptional": false
-                          }
-                        ],
-                        "Node": "Example",
-                        "Text": null,
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "ExampleItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Markup": [
-                          {
-                            "IsItalics": false,
-                            "IsAccent": false,
-                            "Node": "Text",
-                            "Text": "stamped envelope ",
-                            "IsOptional": false
-                          },
-                          {
-                            "IsItalics": false,
-                            "IsAccent": false,
-                            "Node": "Text",
-                            "Text": "— конверт с маркой",
-                            "IsOptional": false
-                          }
-                        ],
-                        "Node": "Example",
-                        "Text": null,
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "ExampleItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Markup": [
-                          {
-                            "IsItalics": false,
-                            "IsAccent": false,
-                            "Node": "Text",
-                            "Text": "window envelope ",
-                            "IsOptional": false
-                          },
-                          {
-                            "IsItalics": false,
-                            "IsAccent": false,
-                            "Node": "Text",
-                            "Text": "— конверт с прямоугольником из прозрачной бумаги ",
-                            "IsOptional": false
-                          }
-                        ],
-                        "Node": "Example",
-                        "Text": null,
-                        "IsOptional": false
-                      },
-                      {
-                        "Markup": [
-                          {
-                            "IsItalics": true,
-                            "IsAccent": false,
-                            "Node": "Text",
-                            "Text": "(через который виден адрес, напечатанный на письме)",
-                            "IsOptional": false
-                          }
-                        ],
-                        "Node": "Comment",
-                        "Text": null,
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "ExampleItem",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Examples",
-                "Text": null,
-                "IsOptional": true
-              },
-              {
-                "Type": null,
-                "Items": [
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "LingvoUniversal (En-Ru)",
-                        "ArticleId": "LingvoUniversal (En-Ru)__stamped addressed envelope",
-                        "Node": "CardRef",
-                        "Text": "stamped addressed envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "LingvoUniversal (En-Ru)",
-                        "ArticleId": "LingvoUniversal (En-Ru)__self-addressed stamped envelope",
-                        "Node": "CardRef",
-                        "Text": "self-addressed stamped envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "LingvoUniversal (En-Ru)",
-                        "ArticleId": "LingvoUniversal (En-Ru)__pay envelope",
-                        "Node": "CardRef",
-                        "Text": "pay envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "LingvoUniversal (En-Ru)",
-                        "ArticleId": "LingvoUniversal (En-Ru)__on the back of an envelope",
-                        "Node": "CardRef",
-                        "Text": "on the back of an envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "CardRefs",
-                "Text": null,
-                "IsOptional": true
+                "value": "loved",
+                "prefix": "",
+                "row": null
               }
             ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
+            [
               {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "обёртка, обложка; обёрточная бумага, упаковка",
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
+                "value": "Imperative",
+                "prefix": null,
+                "row": null
               },
               {
-                "Node": "Caption",
-                "Text": "Syn:",
-                "IsOptional": true
+                "value": "love",
+                "prefix": "",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "Present Participle (Participle I)",
+                "prefix": null,
+                "row": null
               },
               {
-                "Markup": [
-                  {
-                    "Dictionary": "LingvoUniversal (En-Ru)",
-                    "ArticleId": "LingvoUniversal (En-Ru)__wrapper",
-                    "Node": "CardRef",
-                    "Text": "wrapper",
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": true
+                "value": "loving",
+                "prefix": "",
+                "row": null
               }
             ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
+            [
               {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "оболочка",
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
+                "value": "Past Participle (Participle II)",
+                "prefix": null,
+                "row": null
               },
               {
-                "Type": null,
-                "Items": [
-                  {
-                    "Markup": [
-                      {
-                        "Markup": [
-                          {
-                            "IsItalics": false,
-                            "IsAccent": false,
-                            "Node": "Text",
-                            "Text": "The Earth is surrounded with an aerial envelope or atmosphere. ",
-                            "IsOptional": false
-                          },
-                          {
-                            "IsItalics": false,
-                            "IsAccent": false,
-                            "Node": "Text",
-                            "Text": "— Земля окружена воздушной оболочкой, или атмосферой.",
-                            "IsOptional": false
-                          }
-                        ],
-                        "Node": "Example",
-                        "Text": null,
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "ExampleItem",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Examples",
-                "Text": null,
-                "IsOptional": true
+                "value": "loved",
+                "prefix": "",
+                "row": null
               }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 4
+        },
+        {
+          "name": "Present Indefinite, Active Voice",
+          "table": [
+            [
               {
-                "Markup": [
-                  {
-                    "FullText": "математика",
-                    "Node": "Abbrev",
-                    "Text": "мат.",
-                    "IsOptional": false
-                  },
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "огибающая ",
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "IsItalics": true,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "(линия)",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "Comment",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "FullText": "технический термин",
-                    "Node": "Abbrev",
-                    "Text": "тех.",
-                    "IsOptional": false
-                  },
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "диапазон режимов для безопасной эксплуатации",
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
+                "value": "love",
+                "prefix": "I ",
+                "row": null
               },
               {
-                "Type": null,
-                "Items": [
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "LingvoUniversal (En-Ru)",
-                        "ArticleId": "LingvoUniversal (En-Ru)__push the envelope",
-                        "Node": "CardRef",
-                        "Text": "push the envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "CardRefs",
-                "Text": null,
-                "IsOptional": false
+                "value": "love",
+                "prefix": "we ",
+                "row": null
               }
             ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          }
-        ],
-        "Node": "List",
-        "Text": null,
-        "IsOptional": false
-      }
-    ]
+            [
+              {
+                "value": "love",
+                "prefix": "you ",
+                "row": null
+              },
+              {
+                "value": "love",
+                "prefix": "you ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loves",
+                "prefix": "he/she/it ",
+                "row": null
+              },
+              {
+                "value": "love",
+                "prefix": "they ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Present Continuous, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loving",
+                "prefix": "I am ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "we are ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "you are ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "you are ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "he/she/it is ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "they are ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Present Perfect, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I have ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we have ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you have ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you have ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it has ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they have ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Present Perfect Continuous, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loving",
+                "prefix": "I have been ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "we have been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "you have been ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "you have been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "he/she/it has been ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "they have been ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Past Indefinite, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Past Continuous, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loving",
+                "prefix": "I was ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "we were ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "you were ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "you were ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "he/she/it was ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "they were ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Past Perfect, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I had ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we had ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you had ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you had ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it had ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they had ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Past Perfect Continuous, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loving",
+                "prefix": "I had been ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "we had been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "you had been ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "you had been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "he/she/it had been ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "they had been ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Future Indefinite, Active Voice",
+          "table": [
+            [
+              {
+                "value": "love",
+                "prefix": "I shall/will ",
+                "row": null
+              },
+              {
+                "value": "love",
+                "prefix": "we shall/will ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "love",
+                "prefix": "you will ",
+                "row": null
+              },
+              {
+                "value": "love",
+                "prefix": "you will ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "love",
+                "prefix": "he/she/it will ",
+                "row": null
+              },
+              {
+                "value": "love",
+                "prefix": "they will ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Future Continuous, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loving",
+                "prefix": "I shall/will be ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "we shall/will be ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "you will be ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "you will be ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "he/she/it will be ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "they will be ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Future Perfect, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I shall/will have ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we shall/will have ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you will have ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you will have ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it will have ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they will have ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Future Perfect Continuous, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loving",
+                "prefix": "I shall/will have been ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "we shall/will have been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "you will have been ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "you will have been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "he/she/it will have been ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "they will have been ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Future in the Past Indefinite, Active Voice",
+          "table": [
+            [
+              {
+                "value": "love",
+                "prefix": "I should/would ",
+                "row": null
+              },
+              {
+                "value": "love",
+                "prefix": "we should/would ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "love",
+                "prefix": "you would ",
+                "row": null
+              },
+              {
+                "value": "love",
+                "prefix": "you would ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "love",
+                "prefix": "he/she/it would ",
+                "row": null
+              },
+              {
+                "value": "love",
+                "prefix": "they would ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Future in the Past Continuous, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loving",
+                "prefix": "I should/would be ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "we should/would be ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "you would be ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "you would be ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "he/she/it would be ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "they would be ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Future in the Past Perfect, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I should/would have ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we should/would have ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you would have ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you would have ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it would have ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they would have ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Future in the Past Perfect Continuous, Active Voice",
+          "table": [
+            [
+              {
+                "value": "loving",
+                "prefix": "I should/would have been ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "we should/would have been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "you would have been ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "you would have been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loving",
+                "prefix": "he/she/it would have been ",
+                "row": null
+              },
+              {
+                "value": "loving",
+                "prefix": "they would have been ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Present Indefinite, Passive Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I am ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we are ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you are ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you are ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it is ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they are ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Present Continuous, Passive Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I am being ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we are being ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you are being ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you are being ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it is being ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they are being ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Present Perfect, Passive Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I have been ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we have been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you have been ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you have been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it has been ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they have been ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Past Indefinite, Passive Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I was ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we were ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you were ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you were ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it was ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they were ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Past Continuous, Passive Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I was being ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we were being ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you were being ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you were being ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it was being ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they were being ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Past Perfect, Passive Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I had been ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we had been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you had been ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you had been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it had been ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they had been ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Future Indefinite, Passive Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I shall/will be ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we shall/will be ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you will be ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you will be ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it will be ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they will be ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        },
+        {
+          "name": "Future Perfect, Passive Voice",
+          "table": [
+            [
+              {
+                "value": "loved",
+                "prefix": "I shall/will have been ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "we shall/will have been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "you will have been ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "you will have been ",
+                "row": null
+              }
+            ],
+            [
+              {
+                "value": "loved",
+                "prefix": "he/she/it will have been ",
+                "row": null
+              },
+              {
+                "value": "loved",
+                "prefix": "they will have been ",
+                "row": null
+              }
+            ]
+          ],
+          "columnCount": 2,
+          "rowCount": 3
+        }
+      ]
+    }
   },
   {
-    "Title": "envelope",
-    "TitleMarkup": [
-      {
-        "IsItalics": false,
-        "IsAccent": false,
-        "Node": "Text",
-        "Text": "envelope",
-        "IsOptional": false
-      }
-    ],
-    "Dictionary": "Physics (En-Ru)",
-    "ArticleId": "Physics (En-Ru)__envelope",
-    "Body": [
-      {
-        "Markup": [
-          {
-            "IsItalics": false,
-            "IsAccent": false,
-            "Node": "Text",
-            "Text": "баллон, колба ",
-            "IsOptional": false
-          },
-          {
-            "Markup": [
+    "lexem": "love",
+    "partOfSpeech": "noun",
+    "paradigmJson": {
+      "name": "love",
+      "grammar": "noun",
+      "groups": [
+        {
+          "name": "",
+          "table": [
+            [
               {
-                "IsItalics": false,
-                "IsAccent": false,
-                "Node": "Text",
-                "Text": "(",
-                "IsOptional": false
+                "value": "",
+                "prefix": null,
+                "row": null
               },
               {
-                "IsItalics": true,
-                "IsAccent": false,
-                "Node": "Text",
-                "Text": "электронной лампы",
-                "IsOptional": false
+                "value": "Singular",
+                "prefix": null,
+                "row": null
               },
               {
-                "IsItalics": false,
-                "IsAccent": false,
-                "Node": "Text",
-                "Text": ")",
-                "IsOptional": false
+                "value": "Plural",
+                "prefix": null,
+                "row": null
               }
             ],
-            "Node": "Comment",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "IsItalics": false,
-            "IsAccent": false,
-            "Node": "Text",
-            "Text": ", капсула, огибающая кривая, огибающая, огибающая поверхность",
-            "IsOptional": false
-          }
-        ],
-        "Node": "Paragraph",
-        "Text": null,
-        "IsOptional": false
-      }
-    ]
-  },
-  {
-    "Title": "envelope",
-    "TitleMarkup": [
-      {
-        "IsItalics": false,
-        "IsAccent": false,
-        "Node": "Text",
-        "Text": "envelope",
-        "IsOptional": false
-      }
-    ],
-    "Dictionary": "Biology (En-Ru)",
-    "ArticleId": "Biology (En-Ru)__envelope",
-    "Body": [
-      {
-        "Type": 3,
-        "Items": [
-          {
-            "Markup": [
+            [
               {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "оболочка",
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "FullText": "ботаника",
-                    "Node": "Abbrev",
-                    "Text": "бот.",
-                    "IsOptional": false
-                  },
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "обвёртка; покров",
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "плёнка ",
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "(",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": true,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "в яйце",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": ")",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "Comment",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
+                "value": "Common case",
+                "prefix": null,
+                "row": null
               },
               {
-                "Type": null,
-                "Items": [
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Biology (En-Ru)",
-                        "ArticleId": "Biology (En-Ru)__biological envelope",
-                        "Node": "CardRef",
-                        "Text": "biological envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Biology (En-Ru)",
-                        "ArticleId": "Biology (En-Ru)__cell envelope",
-                        "Node": "CardRef",
-                        "Text": "cell envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Biology (En-Ru)",
-                        "ArticleId": "Biology (En-Ru)__floral envelope",
-                        "Node": "CardRef",
-                        "Text": "floral envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Biology (En-Ru)",
-                        "ArticleId": "Biology (En-Ru)__nuclear envelope",
-                        "Node": "CardRef",
-                        "Text": "nuclear envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "CardRefs",
-                "Text": null,
-                "IsOptional": true
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          }
-        ],
-        "Node": "List",
-        "Text": null,
-        "IsOptional": false
-      }
-    ]
-  },
-  {
-    "Title": "envelope",
-    "TitleMarkup": [
-      {
-        "IsItalics": false,
-        "IsAccent": false,
-        "Node": "Text",
-        "Text": "envelope",
-        "IsOptional": false
-      }
-    ],
-    "Dictionary": "LingvoComputer (En-Ru)",
-    "ArticleId": "LingvoComputer (En-Ru)__envelope",
-    "Body": [
-      {
-        "Type": 3,
-        "Items": [
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "огибающая ",
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "(",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": true,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "поверхность, кривая",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": ")",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "Comment",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "конверт ",
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "(",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": true,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "при передаче пакетов данных",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": ")",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "Comment",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "баллон, колба ",
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "(",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": true,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "лампы или электронно-лучевой трубки",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": ")",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "Comment",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "граница ",
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "(",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": true,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "области",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": ")",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "Comment",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
+                "value": "love",
+                "prefix": "",
+                "row": null
               },
               {
-                "Type": null,
-                "Items": [
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "LingvoComputer (En-Ru)",
-                        "ArticleId": "LingvoComputer (En-Ru)__confidence envelope",
-                        "Node": "CardRef",
-                        "Text": "confidence envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "LingvoComputer (En-Ru)",
-                        "ArticleId": "LingvoComputer (En-Ru)__permanently locked envelope",
-                        "Node": "CardRef",
-                        "Text": "permanently locked envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "LingvoComputer (En-Ru)",
-                        "ArticleId": "LingvoComputer (En-Ru)__pulse envelope",
-                        "Node": "CardRef",
-                        "Text": "pulse envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "LingvoComputer (En-Ru)",
-                        "ArticleId": "LingvoComputer (En-Ru)__start-stop envelope",
-                        "Node": "CardRef",
-                        "Text": "start-stop envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "LingvoComputer (En-Ru)",
-                        "ArticleId": "LingvoComputer (En-Ru)__operating envelope",
-                        "Node": "CardRef",
-                        "Text": "operating envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "CardRefs",
-                "Text": null,
-                "IsOptional": true
+                "value": "loves",
+                "prefix": "",
+                "row": null
               }
             ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          }
-        ],
-        "Node": "List",
-        "Text": null,
-        "IsOptional": false
-      }
-    ]
-  },
-  {
-    "Title": "envelope",
-    "TitleMarkup": [
-      {
-        "IsItalics": false,
-        "IsAccent": false,
-        "Node": "Text",
-        "Text": "envelope",
-        "IsOptional": false
-      }
-    ],
-    "Dictionary": "Telecoms (En-Ru)",
-    "ArticleId": "Telecoms (En-Ru)__envelope",
-    "Body": [
-      {
-        "Markup": [
-          {
-            "IsItalics": false,
-            "IsAccent": false,
-            "Node": "Text",
-            "Text": "огибающая",
-            "IsOptional": false
-          }
-        ],
-        "Node": "Paragraph",
-        "Text": null,
-        "IsOptional": false
-      },
-      {
-        "Type": null,
-        "Items": [
-          {
-            "Markup": [
+            [
               {
-                "Dictionary": "Telecoms (En-Ru)",
-                "ArticleId": "Telecoms (En-Ru)__amplitude envelope",
-                "Node": "CardRef",
-                "Text": "amplitude envelope",
-                "IsOptional": false
-              }
-            ],
-            "Node": "CardRefItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Dictionary": "Telecoms (En-Ru)",
-                "ArticleId": "Telecoms (En-Ru)__modulation envelope",
-                "Node": "CardRef",
-                "Text": "modulation envelope",
-                "IsOptional": false
-              }
-            ],
-            "Node": "CardRefItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Dictionary": "Telecoms (En-Ru)",
-                "ArticleId": "Telecoms (En-Ru)__noise envelope",
-                "Node": "CardRef",
-                "Text": "noise envelope",
-                "IsOptional": false
-              }
-            ],
-            "Node": "CardRefItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Dictionary": "Telecoms (En-Ru)",
-                "ArticleId": "Telecoms (En-Ru)__pulse envelope",
-                "Node": "CardRef",
-                "Text": "pulse envelope",
-                "IsOptional": false
-              }
-            ],
-            "Node": "CardRefItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Dictionary": "Telecoms (En-Ru)",
-                "ArticleId": "Telecoms (En-Ru)__signal envelope",
-                "Node": "CardRef",
-                "Text": "signal envelope",
-                "IsOptional": false
-              }
-            ],
-            "Node": "CardRefItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Dictionary": "Telecoms (En-Ru)",
-                "ArticleId": "Telecoms (En-Ru)__signal-wave envelope",
-                "Node": "CardRef",
-                "Text": "signal-wave envelope",
-                "IsOptional": false
-              }
-            ],
-            "Node": "CardRefItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Dictionary": "Telecoms (En-Ru)",
-                "ArticleId": "Telecoms (En-Ru)__spectrum envelope",
-                "Node": "CardRef",
-                "Text": "spectrum envelope",
-                "IsOptional": false
-              }
-            ],
-            "Node": "CardRefItem",
-            "Text": null,
-            "IsOptional": false
-          }
-        ],
-        "Node": "CardRefs",
-        "Text": null,
-        "IsOptional": true
-      }
-    ]
-  },
-  {
-    "Title": "envelope",
-    "TitleMarkup": [
-      {
-        "IsItalics": false,
-        "IsAccent": false,
-        "Node": "Text",
-        "Text": "envelope",
-        "IsOptional": false
-      }
-    ],
-    "Dictionary": "Engineering (En-Ru)",
-    "ArticleId": "Engineering (En-Ru)__envelope",
-    "Body": [
-      {
-        "Type": 3,
-        "Items": [
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "оболочка; кожух; обшивка",
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "зона обработки; рабочая зона ",
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "(",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": true,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "напр. робота",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": ")",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "Comment",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "наибольшие размеры ",
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "(",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": true,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "обрабатываемого изделия",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": ")",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "Comment",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "огибать, охватывать",
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "огибающая ",
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "(",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": true,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "поверхность, кривая",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": ")",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "Comment",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "конверт ",
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "(",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": true,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "при передаче пакетов данных",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": ")",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "Comment",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "баллон, колба ",
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "(",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": true,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": "лампы или ЭЛТ",
-                        "IsOptional": false
-                      },
-                      {
-                        "IsItalics": false,
-                        "IsAccent": false,
-                        "Node": "Text",
-                        "Text": ")",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "Comment",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          },
-          {
-            "Markup": [
-              {
-                "Markup": [
-                  {
-                    "IsItalics": false,
-                    "IsAccent": false,
-                    "Node": "Text",
-                    "Text": "ограждающая конструкция",
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "Paragraph",
-                "Text": null,
-                "IsOptional": false
+                "value": "Possessive case",
+                "prefix": null,
+                "row": null
               },
               {
-                "Type": null,
-                "Items": [
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__envelope of the metal",
-                        "Node": "CardRef",
-                        "Text": "envelope of the metal",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__cutting envelope",
-                        "Node": "CardRef",
-                        "Text": "cutting envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__inspection envelope",
-                        "Node": "CardRef",
-                        "Text": "inspection envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__machining envelope",
-                        "Node": "CardRef",
-                        "Text": "machining envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__maximum grinding envelope",
-                        "Node": "CardRef",
-                        "Text": "maximum grinding envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__maximum milling envelope",
-                        "Node": "CardRef",
-                        "Text": "maximum milling envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__maximum turning envelope",
-                        "Node": "CardRef",
-                        "Text": "maximum turning envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__maximum work envelope",
-                        "Node": "CardRef",
-                        "Text": "maximum work envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__measuring envelope",
-                        "Node": "CardRef",
-                        "Text": "measuring envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__robot's envelope",
-                        "Node": "CardRef",
-                        "Text": "robot's envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__robot's work envelope",
-                        "Node": "CardRef",
-                        "Text": "robot's work envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__robot's working envelope",
-                        "Node": "CardRef",
-                        "Text": "robot's working envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__tolerance envelope",
-                        "Node": "CardRef",
-                        "Text": "tolerance envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__volumetric envelope",
-                        "Node": "CardRef",
-                        "Text": "volumetric envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__working envelope",
-                        "Node": "CardRef",
-                        "Text": "working envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__working envelope of the robot",
-                        "Node": "CardRef",
-                        "Text": "working envelope of the robot",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__workpiece envelope",
-                        "Node": "CardRef",
-                        "Text": "workpiece envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  },
-                  {
-                    "Markup": [
-                      {
-                        "Dictionary": "Engineering (En-Ru)",
-                        "ArticleId": "Engineering (En-Ru)__X-Y-Z work envelope",
-                        "Node": "CardRef",
-                        "Text": "X-Y-Z work envelope",
-                        "IsOptional": false
-                      }
-                    ],
-                    "Node": "CardRefItem",
-                    "Text": null,
-                    "IsOptional": false
-                  }
-                ],
-                "Node": "CardRefs",
-                "Text": null,
-                "IsOptional": true
-              }
-            ],
-            "Node": "ListItem",
-            "Text": null,
-            "IsOptional": false
-          }
-        ],
-        "Node": "List",
-        "Text": null,
-        "IsOptional": false
-      }
-    ]
-  },
-  {
-    "Title": "envelope",
-    "TitleMarkup": [
-      {
-        "IsItalics": false,
-        "IsAccent": false,
-        "Node": "Text",
-        "Text": "envelope",
-        "IsOptional": false
-      }
-    ],
-    "Dictionary": "AmericanEnglish (En-Ru)",
-    "ArticleId": "AmericanEnglish (En-Ru)__envelope",
-    "Body": [
-      {
-        "Markup": [
-          {
-            "IsItalics": false,
-            "IsAccent": false,
-            "Node": "Text",
-            "Text": "конв",
-            "IsOptional": false
-          },
-          {
-            "IsItalics": false,
-            "IsAccent": true,
-            "Node": "Text",
-            "Text": "е",
-            "IsOptional": false
-          },
-          {
-            "IsItalics": false,
-            "IsAccent": false,
-            "Node": "Text",
-            "Text": "рт ",
-            "IsOptional": false
-          },
-          {
-            "FullText": "мужской род",
-            "Node": "Abbrev",
-            "Text": "м",
-            "IsOptional": false
-          }
-        ],
-        "Node": "Paragraph",
-        "Text": null,
-        "IsOptional": false
-      },
-      {
-        "Type": null,
-        "Items": [
-          {
-            "Markup": [
+                "value": "love's",
+                "prefix": "",
+                "row": null
+              },
               {
-                "Dictionary": "AmericanEnglish (En-Ru)",
-                "ArticleId": "AmericanEnglish (En-Ru)__manila envelope",
-                "Node": "CardRef",
-                "Text": "manila envelope",
-                "IsOptional": false
+                "value": "loves'",
+                "prefix": "",
+                "row": null
               }
-            ],
-            "Node": "CardRefItem",
-            "Text": null,
-            "IsOptional": false
-          }
-        ],
-        "Node": "CardRefs",
-        "Text": null,
-        "IsOptional": true
-      }
-    ]
+            ]
+          ],
+          "columnCount": 3,
+          "rowCount": 3
+        }
+      ]
+    }
   }
 ]

@@ -25,7 +25,7 @@ namespace LingvoInfoAPI.Clients
             _client = clientFactory.CreateClient("LingvoApi");
         }
 
-        public async Task<T> MakeApiRequestAsync<T>(string requestUrl)
+        private async Task<T> MakeApiRequestAsync<T>(string requestUrl)
         {
             HttpResponseMessage response = await _client.GetAsync(requestUrl);
 

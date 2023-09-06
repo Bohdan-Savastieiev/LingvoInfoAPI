@@ -10,7 +10,7 @@ namespace LingvoInfoAPI.Installers
             builder.Services.AddHttpClient("LingueeApi", client =>
             {
                 client.BaseAddress = new Uri(builder.Configuration["LingueeApi:BaseUrl"]
-                    ?? throw new ArgumentNullException("Linguee API Base URI wasn't found in configuration settings"));
+                    ?? throw new InvalidOperationException("Linguee API Base URI wasn't found in configuration settings"));
             }).ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
             {
                 AllowAutoRedirect = true,

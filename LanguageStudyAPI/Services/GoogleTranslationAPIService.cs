@@ -3,11 +3,11 @@ using Microsoft.Extensions.Configuration;
 
 namespace LanguageStudyAPI.Services
 {
-    public class GoogleTranslationAPIService
+    public class GoogleTranslationApiService
     {
         private readonly TranslationClient _translationClient;
 
-        public GoogleTranslationAPIService(IConfiguration configuration)
+        public GoogleTranslationApiService(IConfiguration configuration)
         {
             var apiKey = configuration["GoogleCloudSettings:ApiKey"];
             _translationClient = TranslationClient.CreateFromApiKey(apiKey);

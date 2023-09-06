@@ -1,9 +1,12 @@
-﻿using LanguageStudyAPI.Models.Lingvo;
+﻿using LanguageStudyAPI.Models;
+using LanguageStudyAPI.Models.Lingvo;
 using LanguageStudyAPI.Services;
 using LingvoInfoAPI.Clients;
 using LingvoInfoAPI.DTOs;
+using LingvoInfoAPI.Mappers;
 using LingvoInfoAPI.Models.RequestParameters;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Validations;
 using Newtonsoft.Json.Linq;
 
 namespace LingvoInfoAPI.Services;
@@ -11,7 +14,11 @@ public class LingvoInfoService : ILingvoInfoService
 {
     private readonly LingvoApiClient _lingvoClient;
     private readonly LingueeApiClient _lingueeClient;
-    private readonly GoogleTranslationAPIClient _googleClient;
+    private readonly GoogleTranslationApiClient _googleClient;
+    private readonly LingvoTranslationsDtoLingvoInfoMapper _lingvoMapper;
+    private readonly LingueeDtoLingvoInfoMapper _lingueeMapper;
+    private readonly LingvoWordFormsDtoMapper _wordFormsMapper;
+
     private readonly Dictionary<string, int> lingvoLanguages = new ()
     {
         { "ch", 1028 },
@@ -27,31 +34,40 @@ public class LingvoInfoService : ILingvoInfoService
     public LingvoInfoService(
         LingvoApiClient lingvoClient,
         LingueeApiClient lingueeClient,
-        GoogleTranslationAPIClient googleClient)
+        GoogleTranslationApiClient googleClient,
+        LingvoTranslationsDtoLingvoInfoMapper lingvoMapper,
+        LingueeDtoLingvoInfoMapper lingueeMapper,
+        LingvoWordFormsDtoMapper wordFormsMapper)
     {
         _lingvoClient = lingvoClient;
         _lingueeClient = lingueeClient;
         _googleClient = googleClient;
+        _lingvoMapper = lingvoMapper;
+        _lingueeMapper = lingueeMapper;
+        _wordFormsMapper = wordFormsMapper;
     }
-    public async Task<string> GetTranslationsAsync(string text, string srcLang, string dstLang)
+    public async Task<LingvoInfo> GetTranslationsAsync(string text, string srcLang, string dstLang)
     {
         string lingvoSrcLang = lingvoLanguages[srcLang].ToString();
         string lingvoDstLang = lingvoLanguages[dstLang].ToString();
 
         var translations = await _lingvoClient.GetTranslationAsync(text, lingvoSrcLang, lingvoDstLang, false);
 
-        LingvoSoundDto? sound;
+        var lingvoInfo = _lingvoMapper.MapToLingvoInfo(translations);
+
         var soundParameters = FindFirstSoundFileAndDictionary(translations);
         if (soundParameters != null)
         {
-            sound = await _lingvoClient.GetSoundAsync(
+            var sound = await _lingvoClient.GetSoundAsync(
                 soundParameters.DictionaryName, 
                 soundParameters.FileName);
+            //lingvoInfo.Sound = sound.EncodedAudio;
         }
 
-        var wordForms = await _lingvoClient.GetWordFormsAsync(text, lingvoSrcLang);
+        var wordFormsDto = await _lingvoClient.GetWordFormsAsync(text, lingvoSrcLang);
+        lingvoInfo.WordForms = _wordFormsMapper.MapWordForms(wordFormsDto);
 
-        return "";
+        return lingvoInfo;
     }
     private LingvoSoundParameters? FindFirstSoundFileAndDictionary(List<LingvoTranslationsDto> translations)
     {   
@@ -72,5 +88,4 @@ public class LingvoInfoService : ILingvoInfoService
 
         return null;
     }
-
 }

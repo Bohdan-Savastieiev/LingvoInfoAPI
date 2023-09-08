@@ -1,0 +1,199 @@
+[
+    {
+        "Title": "masculinity",
+        "TitleMarkup": [
+            {
+                "IsItalics": false,
+                "IsAccent": false,
+                "Node": "Text",
+                "Text": "masculinity",
+                "IsOptional": false
+            }
+        ],
+        "Dictionary": "LingvoUniversal (En-Ru)",
+        "ArticleId": "LingvoUniversal (En-Ru)__masculinity",
+        "Body": [
+            {
+                "Markup": [
+                    {
+                        "Node": "Transcription",
+                        "Text": "ˌmæskju'lɪnətɪ",
+                        "IsOptional": false
+                    }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+            },
+            {
+                "Markup": [
+                    {
+                        "FullText": "имя существительное",
+                        "Node": "Abbrev",
+                        "Text": "сущ.",
+                        "IsOptional": false
+                    }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+            },
+            {
+                "Type": 3,
+                "Items": [
+                    {
+                        "Markup": [
+                            {
+                                "Markup": [
+                                    {
+                                        "IsItalics": false,
+                                        "IsAccent": false,
+                                        "Node": "Text",
+                                        "Text": "мужественность",
+                                        "IsOptional": false
+                                    }
+                                ],
+                                "Node": "Paragraph",
+                                "Text": null,
+                                "IsOptional": false
+                            },
+                            {
+                                "Node": "Caption",
+                                "Text": "Syn:",
+                                "IsOptional": true
+                            },
+                            {
+                                "Markup": [
+                                    {
+                                        "Dictionary": "LingvoUniversal (En-Ru)",
+                                        "ArticleId": "LingvoUniversal (En-Ru)__manhood",
+                                        "Node": "CardRef",
+                                        "Text": "manhood",
+                                        "IsOptional": false
+                                    },
+                                    {
+                                        "IsItalics": false,
+                                        "IsAccent": false,
+                                        "Node": "Text",
+                                        "Text": ", ",
+                                        "IsOptional": false
+                                    },
+                                    {
+                                        "Dictionary": "LingvoUniversal (En-Ru)",
+                                        "ArticleId": "LingvoUniversal (En-Ru)__manliness",
+                                        "Node": "CardRef",
+                                        "Text": "manliness",
+                                        "IsOptional": false
+                                    }
+                                ],
+                                "Node": "Paragraph",
+                                "Text": null,
+                                "IsOptional": true
+                            }
+                        ],
+                        "Node": "ListItem",
+                        "Text": null,
+                        "IsOptional": false
+                    },
+                    {
+                        "Markup": [
+                            {
+                                "Markup": [
+                                    {
+                                        "IsItalics": true,
+                                        "IsAccent": false,
+                                        "Node": "Text",
+                                        "Text": "(masculinities) ",
+                                        "IsOptional": false
+                                    },
+                                    {
+                                        "IsItalics": false,
+                                        "IsAccent": false,
+                                        "Node": "Text",
+                                        "Text": "вещи, типичные для мужчин",
+                                        "IsOptional": false
+                                    }
+                                ],
+                                "Node": "Paragraph",
+                                "Text": null,
+                                "IsOptional": false
+                            }
+                        ],
+                        "Node": "ListItem",
+                        "Text": null,
+                        "IsOptional": false
+                    }
+                ],
+                "Node": "List",
+                "Text": null,
+                "IsOptional": false
+            }
+        ]
+    },
+    {
+        "Title": "masculinity",
+        "TitleMarkup": [
+            {
+                "IsItalics": false,
+                "IsAccent": false,
+                "Node": "Text",
+                "Text": "masculinity",
+                "IsOptional": false
+            }
+        ],
+        "Dictionary": "Psychology (En-Ru)",
+        "ArticleId": "Psychology (En-Ru)__masculinity",
+        "Body": [
+            {
+                "Type": 3,
+                "Items": [
+                    {
+                        "Markup": [
+                            {
+                                "Markup": [
+                                    {
+                                        "IsItalics": false,
+                                        "IsAccent": false,
+                                        "Node": "Text",
+                                        "Text": "мужественность, энергичность",
+                                        "IsOptional": false
+                                    }
+                                ],
+                                "Node": "Paragraph",
+                                "Text": null,
+                                "IsOptional": false
+                            }
+                        ],
+                        "Node": "ListItem",
+                        "Text": null,
+                        "IsOptional": false
+                    },
+                    {
+                        "Markup": [
+                            {
+                                "Markup": [
+                                    {
+                                        "IsItalics": false,
+                                        "IsAccent": false,
+                                        "Node": "Text",
+                                        "Text": "мужеподобность",
+                                        "IsOptional": false
+                                    }
+                                ],
+                                "Node": "Paragraph",
+                                "Text": null,
+                                "IsOptional": false
+                            }
+                        ],
+                        "Node": "ListItem",
+                        "Text": null,
+                        "IsOptional": false
+                    }
+                ],
+                "Node": "List",
+                "Text": null,
+                "IsOptional": false
+            }
+        ]
+    }
+]

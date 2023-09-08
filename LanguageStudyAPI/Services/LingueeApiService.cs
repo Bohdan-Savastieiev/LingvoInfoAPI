@@ -20,14 +20,14 @@ public class LingueeApiService
 
         HttpResponseMessage response = await _httpClient.GetAsync(requestUrl);
 
-        //if (response.StatusCode == HttpStatusCode.TemporaryRedirect)
-        //{
-        //    var newUri = response.Headers.Location;
-        //    if (newUri != null)
-        //    {
-        //        response = await _httpClient.GetAsync(newUri);
-        //    }
-        //}
+        if (response.StatusCode == HttpStatusCode.TemporaryRedirect)
+        {
+            var newUri = response.Headers.Location;
+            if (newUri != null)
+            {
+                response = await _httpClient.GetAsync(newUri);
+            }
+        }
 
         if (response.IsSuccessStatusCode)
         {

@@ -43,133 +43,19 @@ namespace LingvoInfoAPI.Mappers
                 }
             }
         }
-
-        private TranscriptionNode? GetTranscriptionNode(LingvoTranslationsDto translation)
-        {
-            var paragraphNode = translation.Body.FirstOrDefault(x => x is ParagraphNode) as ParagraphNode;
-            if (paragraphNode == null)
-            {
-                return null;
-            }
-
-            return paragraphNode.Markup.FirstOrDefault(x => x is TranscriptionNode) as TranscriptionNode;
-        }
-        private List<LingvoDtoTranslationAndExamples>? GetTranslationAndExamples(LingvoTranslationsDto dtoObj)
-        {
-            var result = new List<LingvoDtoTranslationAndExamples>();
-            var paragraphNode = dtoObj.Body.OfType<ListNode>().FirstOrDefault();
-            if (paragraphNode == null)
-            {
-                // check if there is one single translation and not a list of translations
-                var translationParagraphNode = dtoObj.Body
-                    .OfType<ParagraphNode>()
-                    .FirstOrDefault(paragraph => paragraph.Markup.FirstOrDefault() is TextNode);
-
-                if (translationParagraphNode != null)
-                {
-                    var examplesNode = dtoObj.Body
-                                        .OfType<ExamplesNode>()
-                                        .FirstOrDefault();
-
-                    result.Add(new LingvoDtoTranslationAndExamples { Translation = translationParagraphNode, Examples = examplesNode });
-                }
-            }
-            else
-            {
-                foreach (var listItemNode in paragraphNode.Items)
-                {
-                    if (listItemNode == null)
-                    {
-                        continue;
-                    }
-
-                    var translationParagraphNode = listItemNode.Markup
-                        .OfType<ParagraphNode>()
-                        .FirstOrDefault(paragraph => paragraph.Markup.FirstOrDefault() is TextNode);
-                    if (translationParagraphNode == null)
-                    {
-                        // || translationParagraphNode.Markup.Count != 1
-                        continue;
-                    }
-
-                    var examplesNode = listItemNode.Markup
-                        .OfType<ExamplesNode>()
-                        .FirstOrDefault();
-
-                    result.Add(new LingvoDtoTranslationAndExamples { Translation = translationParagraphNode, Examples = examplesNode });
-                }
-            }
-
-            return result;
-        }
-
         private void MapTranslations(LingvoInfo lingvoInfo, List<LingvoTranslationsDto> dtoObjs)
         {
+
             foreach (var dtoObj in dtoObjs)
             {
-                var paragraphNode = dtoObj.Body.FirstOrDefault(x => x is ListNode) as ListNode;
-                if (paragraphNode == null)
+                var listNode = dtoObj.Body.OfType<ListNode>().FirstOrDefault();
+                if (listNode == null)
                 {
-                    // check if there is one single translation and not a list of translations
-                    var paragraphTranslationNode = dtoObj.Body.Where(x => x is ParagraphNode paragraph
-                        && paragraph.Markup.FirstOrDefault() is TextNode).FirstOrDefault() as ParagraphNode;
-                    if (paragraphTranslationNode != null && paragraphTranslationNode.Markup != null)
-                    {
-                        var translationNode = paragraphTranslationNode.Markup.FirstOrDefault();
-                        if (translationNode != null && !translationNode.Text.IsNullOrEmpty())
-                        {
-                            var translation = new LexemeTranslation()
-                            {
-                                Text = translationNode.Text
-                            };
-                            lingvoInfo.Translations.Add(translation);
-                        }
-
-
-                    }
-
-                    continue;
+                    MapTranslationsAndExamplesIfListNodeIsNull(lingvoInfo, dtoObj);
                 }
-
-                foreach (var listItemNode in paragraphNode.Items)
+                else
                 {
-                    if (listItemNode == null)
-                    {
-                        continue;
-                    }
-
-                    var translationParagraphNode = listItemNode.Markup.FirstOrDefault(x => x is ParagraphNode) as ParagraphNode;
-                    if (translationParagraphNode == null || translationParagraphNode.Markup.Count != 1)
-                    {
-                        continue;
-                    }
-
-                    var translationNode = translationParagraphNode.Markup.FirstOrDefault(x => x is TextNode) as TextNode;
-                    if (translationNode == null || translationNode.Text == null)
-                    {
-                        continue;
-                    }
-
-                    var translationValues = translationNode.Text.Split(", ");
-                    foreach (var translationValue in translationValues)
-                    {
-                        if (lingvoInfo.Translations.Select(x => x.Text).Contains(translationValue))
-                        {
-
-                        }
-                    }
-                    var translation = new LexemeTranslation()
-                    {
-                        Text = translationNode.Text
-                    };
-
-                    var examplesNode = listItemNode.Markup.FirstOrDefault(x => x is ExamplesNode) as ExamplesNode;
-                    if (examplesNode != null)
-                    {
-                        MapExamples(translation, examplesNode);
-                    }
-
-                    lingvoInfo.Translations.Add(translation);
+                    MapTranslationsAndExamplesFromListNode(lingvoInfo, listNode);
                 }
             }
         }
@@ -210,8 +96,75 @@ namespace LingvoInfoAPI.Mappers
                         NativeExample = examples[i].Text,
                         TranslatedExample = examples[i + 1].Text
                     };
+
+                    translation.Examples.Add(lexemeExample);
                 }
             }
         }
+        private TranscriptionNode? GetTranscriptionNode(LingvoTranslationsDto translation)
+        {
+            var paragraphNode = translation.Body.FirstOrDefault(x => x is ParagraphNode) as ParagraphNode;
+            if (paragraphNode == null)
+            {
+                return null;
+            }
+
+            return paragraphNode.Markup.FirstOrDefault(x => x is TranscriptionNode) as TranscriptionNode;
+        }
+
+        private void MapTranslationsAndExamplesIfListNodeIsNull(LingvoInfo lingvoInfo, LingvoTranslationsDto dtoObj)
+        {
+            var translationNode = dtoObj.Body
+                .OfType<ParagraphNode>()
+                .FirstOrDefault(paragraph => paragraph.Markup.FirstOrDefault() is TextNode)?
+                .Markup.OfType<TextNode>().FirstOrDefault();
+            var examplesNode = dtoObj.Body
+                .OfType<ExamplesNode>().FirstOrDefault();
+
+            AddTranslationAndExamples(lingvoInfo, translationNode, examplesNode);
+        }
+
+        private void MapTranslationsAndExamplesFromListNode(LingvoInfo lingvoInfo, ListNode paragraphNode)
+        {
+            foreach (var listItemNode in paragraphNode.Items)
+            {
+                var translationNode = listItemNode.Markup
+                    .OfType<ParagraphNode>()
+                    .Where(x => x.Markup.Count == 1)
+                    .FirstOrDefault()?
+                    .Markup.OfType<TextNode>().FirstOrDefault();
+                var examplesNode = listItemNode.Markup
+                    .OfType<ExamplesNode>().FirstOrDefault();
+
+                AddTranslationAndExamples(lingvoInfo, translationNode, examplesNode);
+            }
+        }
+        private void AddTranslationAndExamples(LingvoInfo lingvoInfo, TextNode? translationNode, ExamplesNode? examplesNode)
+        {
+            if (translationNode != null && !translationNode.Text.IsNullOrEmpty())
+            {
+                var translation = new LexemeTranslation()
+                {
+                    Text = translationNode.Text
+                };
+
+                if (examplesNode != null)
+                {
+                    MapExamples(translation, examplesNode);
+                }
+
+                lingvoInfo.Translations.Add(translation);
+            }
+        }
+
+        // todo ValidateTranslations();
+        //var translationValues = translationNode.Text.Split("; ");
+        //foreach (var translationValue in translationValues)
+        //{
+        //    if (lingvoInfo.Translations.Select(x => x.Text).Contains(translationValue))
+        //    {
+
+        //    }
+        //}
     }
 }

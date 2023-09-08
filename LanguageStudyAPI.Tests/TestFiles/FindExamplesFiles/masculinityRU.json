@@ -1,0 +1,67 @@
+[
+    {
+        "Title": "маскулинность",
+        "TitleMarkup": [
+            {
+                "IsItalics": false,
+                "IsAccent": false,
+                "Node": "Text",
+                "Text": "маскулинность",
+                "IsOptional": false
+            }
+        ],
+        "Dictionary": "Psychology (Ru-En)",
+        "ArticleId": "Psychology (Ru-En)__маскулинность",
+        "Body": [
+            {
+                "Markup": [
+                    {
+                        "FullText": "имя существительное женского рода",
+                        "Node": "Abbrev",
+                        "Text": "ж.",
+                        "IsOptional": false
+                    }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+            },
+            {
+                "Markup": [
+                    {
+                        "IsItalics": false,
+                        "IsAccent": false,
+                        "Node": "Text",
+                        "Text": "masculinity, maleness",
+                        "IsOptional": false
+                    }
+                ],
+                "Node": "Paragraph",
+                "Text": null,
+                "IsOptional": false
+            },
+            {
+                "Type": null,
+                "Items": [
+                    {
+                        "Markup": [
+                            {
+                                "Dictionary": "Psychology (Ru-En)",
+                                "ArticleId": "Psychology (Ru-En)__маскулинность и фемининность",
+                                "Node": "CardRef",
+                                "Text": "маскулинность и фемининность",
+                                "IsOptional": false
+                            }
+                        ],
+                        "Node": "CardRefItem",
+                        "Text": null,
+                        "IsOptional": false
+                    }
+                ],
+                "Node": "CardRefs",
+                "Text": null,
+                "IsOptional": true
+            }
+        ]
+    }
+]

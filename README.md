@@ -13,7 +13,8 @@ Sample Response:
 ```json
 {
   "lemma": "example",
-  "transcription": "ɪg'zɑːmpl"
+  "transcription": "ɪg'zɑːmpl",
+  "audioLink": "https://www.linguee.com/mp3/EN_US/1a/1a79a4d60de6718e8e5b326e338ae533-101.mp3"
   "translations": [
     {
       "text": "пример, иллюстрация, типичный случай, аналогичный случай",

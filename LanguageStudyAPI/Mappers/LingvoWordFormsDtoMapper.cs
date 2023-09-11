@@ -20,8 +20,10 @@ namespace LingvoInfoAPI.Mappers
                         for (int k = 0; k < table[j].Length; k++)
                         {
                             var value = table[j][k].Value;
-                            if (!result.Select(x => x.Text).Contains(value) && ValidateWordFormValue(form.Lexem, value))
+                            if (!result.Select(x => x.Text).Contains(value) 
+                                && ValidateWordFormValue(form.Lexem, value))
                             {
+                                value = value.Replace("*", "");
                                 result.Add(new WordForm { Text = value });
                             }
                         }

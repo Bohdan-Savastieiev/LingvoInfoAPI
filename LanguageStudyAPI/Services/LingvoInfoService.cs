@@ -4,6 +4,7 @@ using LanguageStudyAPI.Services;
 using LingvoInfoAPI.Clients;
 using LingvoInfoAPI.DTOs;
 using LingvoInfoAPI.Mappers;
+using LingvoInfoAPI.Models;
 using LingvoInfoAPI.Models.RequestParameters;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Validations;
@@ -13,15 +14,13 @@ namespace LingvoInfoAPI.Services;
 public class LingvoInfoService : ILingvoInfoService
 {
     private readonly LingvoApiClient _lingvoClient;
-    private readonly LingueeApiClient _lingueeClient;
     private readonly GoogleTranslationApiClient _googleClient;
     private readonly LingvoTranslationsDtoLingvoInfoMapper _lingvoMapper;
-    private readonly LingueeDtoLingvoInfoMapper _lingueeMapper;
     private readonly LingvoWordFormsDtoMapper _wordFormsMapper;
 
     private readonly Dictionary<string, int> lingvoLanguages = new ()
     {
-        { "ch", 1028 },
+        { "zh", 1028 },
         { "de", 1031 },
         { "el", 1032 },
         { "en", 1033 },
@@ -33,42 +32,63 @@ public class LingvoInfoService : ILingvoInfoService
     };
     public LingvoInfoService(
         LingvoApiClient lingvoClient,
-        LingueeApiClient lingueeClient,
         GoogleTranslationApiClient googleClient,
         LingvoTranslationsDtoLingvoInfoMapper lingvoMapper,
-        LingueeDtoLingvoInfoMapper lingueeMapper,
         LingvoWordFormsDtoMapper wordFormsMapper)
     {
         _lingvoClient = lingvoClient;
-        _lingueeClient = lingueeClient;
         _googleClient = googleClient;
         _lingvoMapper = lingvoMapper;
-        _lingueeMapper = lingueeMapper;
         _wordFormsMapper = wordFormsMapper;
     }
-    public async Task<LingvoInfo> GetTranslationsAsync(string text, string srcLang, string dstLang)
+    public async Task<LingvoInfo> GetTranslationsAsync(string text, string srcLang, string dstLang, bool includeSound)
     {
         string lingvoSrcLang = lingvoLanguages[srcLang].ToString();
         string lingvoDstLang = lingvoLanguages[dstLang].ToString();
 
         var translations = await _lingvoClient.GetTranslationAsync(text, lingvoSrcLang, lingvoDstLang, false);
 
-        var lingvoInfo = _lingvoMapper.MapToLingvoInfo(translations);
+        if (translations.IsNullOrEmpty())
+        {
+            var translation = await _googleClient.TranslateTextAsync(text, dstLang);
+            return new LingvoInfo { Lemma = translation };
+        }
 
+        var lingvoInfo = _lingvoMapper.MapToLingvoInfo(translations);
+        
+        var wordFormsDto = await _lingvoClient.GetWordFormsAsync(text, lingvoSrcLang);
+        lingvoInfo.WordForms = _wordFormsMapper.MapWordForms(wordFormsDto);
+
+        if (includeSound)
+        {
+            var sound = await GetSoundAsync(translations);
+            if (sound != null)
+            {
+                lingvoInfo.Sound = sound.EncodedAudio;
+            }
+        }
+
+        var googleTranslation = await _googleClient.TranslateTextAsync(text, dstLang);
+        if(!lingvoInfo.Translations.Any(x => x.Text.Contains(googleTranslation)))
+        {
+            lingvoInfo.Translations.Insert(0, new LexemeTranslation { Text = googleTranslation });
+        }
+
+        return lingvoInfo;
+    }
+    private async Task<LingvoSoundDto?> GetSoundAsync(List<LingvoTranslationsDto> translations)
+    {
         var soundParameters = FindFirstSoundFileAndDictionary(translations);
         if (soundParameters != null)
         {
             var sound = await _lingvoClient.GetSoundAsync(
-                soundParameters.DictionaryName, 
+                soundParameters.DictionaryName,
                 soundParameters.FileName);
-            //lingvoInfo.Sound = sound.EncodedAudio;
+            return sound;
         }
-
-        var wordFormsDto = await _lingvoClient.GetWordFormsAsync(text, lingvoSrcLang);
-        lingvoInfo.WordForms = _wordFormsMapper.MapWordForms(wordFormsDto);
-
-        return lingvoInfo;
+        return null;
     }
+
     private LingvoSoundParameters? FindFirstSoundFileAndDictionary(List<LingvoTranslationsDto> translations)
     {   
         foreach (var translation in translations)

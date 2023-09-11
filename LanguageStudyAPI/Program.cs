@@ -1,7 +1,9 @@
 using LanguageStudyAPI.Authentication;
+using LanguageStudyAPI.Converters;
 using LanguageStudyAPI.Mappers;
 using LanguageStudyAPI.Services;
 using LingvoInfoAPI.Clients;
+using LingvoInfoAPI.Factories;
 using LingvoInfoAPI.Installers;
 using LingvoInfoAPI.Mappers;
 using LingvoInfoAPI.Services;
@@ -18,21 +20,24 @@ builder.Services.AddSwaggerGen();
 // Cache
 builder.Services.AddMemoryCache();
 
+// Factories
+builder.Services.AddSingleton<INodeFactory, LingvoNodeFactory>();
+
+//Converters
+builder.Services.AddSingleton<LingvoJsonConverter>();
+
 // Mappers
 MapsterConfig.Configure();
 builder.Services.AddScoped<LingvoTranslationsDtoLingvoInfoMapper>();
-builder.Services.AddScoped<LingueeDtoLingvoInfoMapper>();
 builder.Services.AddScoped<LingvoWordFormsDtoMapper>();
 
 // API Clients
 builder.Services.AddScoped<GoogleTranslationApiClient>();
-builder.Services.AddScoped<LingueeApiClient>();
 builder.Services.AddScoped<LingvoApiClient>();
 
 // Services
 builder.Services.AddScoped<ILingvoInfoService, LingvoInfoService>();
 builder.Services.AddScoped<GoogleTranslationApiService>();
-builder.Services.AddScoped<LingueeApiService>();
 builder.Services.AddScoped<ILingvoApiService, LingvoApiService>();
 
 // Http Clients Configuration
@@ -41,8 +46,7 @@ ApplicationInstaller.ConfigureLingvoHttpClient(builder);
 
 // Authentication
 builder.Services.AddScoped<LingvoApiAuthenticationHandler>();
-builder.Services.AddTransient<IApiAuthenticationService>(sp =>
-    ApplicationInstaller.CreateLingvoApiAuthenticationService(sp, builder.Configuration));
+builder.Services.AddTransient<IApiAuthenticationService, LingvoApiAuthenticationService>();
 
 var app = builder.Build();
 

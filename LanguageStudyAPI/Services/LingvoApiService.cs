@@ -32,8 +32,7 @@ public class LingvoApiService : ILingvoApiService
 
         if (response.IsSuccessStatusCode)
         {
-            string content = await response.Content.ReadAsStringAsync();
-            
+            string content = await response.Content.ReadAsStringAsync();   
 
             var rootObject = JsonConvert.DeserializeObject<List<LingvoTranslationsDto>>(content);
             var serialized = JsonConvert.SerializeObject(rootObject);

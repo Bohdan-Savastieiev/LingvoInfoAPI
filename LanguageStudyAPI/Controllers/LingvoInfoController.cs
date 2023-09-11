@@ -16,7 +16,7 @@ public class LingvoInfoController : ControllerBase
     }
 
     [HttpGet("translations")]
-    public async Task<IActionResult> GetTranslations(string text, string srcLang, string dstLang)
+    public async Task<IActionResult> GetTranslations(string text, string srcLang, string dstLang, bool includeSound)
     {
         if (string.IsNullOrEmpty(text) || string.IsNullOrEmpty(srcLang) || string.IsNullOrEmpty(dstLang))
         {
@@ -25,7 +25,7 @@ public class LingvoInfoController : ControllerBase
 
         try
         {
-            var result = await _lingvoInfoService.GetTranslationsAsync(text, srcLang, dstLang);
+            var result = await _lingvoInfoService.GetTranslationsAsync(text, srcLang, dstLang, includeSound);
             return Ok(result);
         }
         catch (Exception ex)

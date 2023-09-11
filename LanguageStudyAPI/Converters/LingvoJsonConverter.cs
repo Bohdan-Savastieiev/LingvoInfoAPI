@@ -3,7 +3,7 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using Google.Apis.Services;
 using LanguageStudyAPI.Models.Lingvo;
-
+using LingvoInfoAPI.Factories;
 
 namespace LanguageStudyAPI.Converters
 {
@@ -19,65 +19,7 @@ namespace LanguageStudyAPI.Converters
             JObject jObject = JObject.Load(reader);
             NodeType type = jObject["Node"].ToObject<NodeType>();
 
-
-            Node node;
-            switch (type)
-            {
-                case NodeType.Comment:
-                    node = new CommentNode();
-                    break;
-                case NodeType.Paragraph:
-                    node = new ParagraphNode();
-                    break;
-                case NodeType.Text:
-                    node = new TextNode();
-                    break;
-                case NodeType.List:
-                    node = new ListNode();
-                    break;
-                case NodeType.ListItem:
-                    node = new ListItemNode();
-                    break;
-                case NodeType.Examples:
-                    node = new ExamplesNode();
-                    break;
-                case NodeType.ExampleItem:
-                    node = new ExampleItemNode();
-                    break;
-                case NodeType.Example:
-                    node = new ExampleNode();
-                    break;
-                case NodeType.CardRefs:
-                    node = new CardRefsNode();
-                    break;
-                case NodeType.CardRefItem:
-                    node = new CardRefItemNode();
-                    break;
-                case NodeType.CardRef:
-                    node = new CardRefNode();
-                    break;
-                case NodeType.Transcription:
-                    node = new TranscriptionNode();
-                    break;
-                case NodeType.Abbrev:
-                    node = new AbbrevNode();
-                    break;
-                case NodeType.Caption:
-                    node = new CaptionNode();
-                    break;
-                case NodeType.Sound:
-                    node = new SoundNode();
-                    break;
-                case NodeType.Ref:
-                    node = new RefNode();
-                    break;
-                case NodeType.Unsupported:
-                    node = new UnsupportedNode();
-                    break;
-                default:
-                    throw new ArgumentException($"Unsupported NodeType: {type}");
-            }
-
+            Node node = CreateNode(type);
             node.NodeType = type;
 
             serializer.Populate(jObject.CreateReader(), node);
@@ -173,6 +115,49 @@ namespace LanguageStudyAPI.Converters
             }
 
             jObject.WriteTo(writer);
+        }
+
+        public Node CreateNode(NodeType nodeType)
+        {
+            switch (nodeType)
+            {
+                case NodeType.Comment:
+                    return new CommentNode();
+                case NodeType.Paragraph:
+                    return new ParagraphNode();
+                case NodeType.Text:
+                    return new TextNode();
+                case NodeType.List:
+                    return new ListNode();
+                case NodeType.ListItem:
+                    return new ListItemNode();
+                case NodeType.Examples:
+                    return new ExamplesNode();
+                case NodeType.ExampleItem:
+                    return new ExampleItemNode();
+                case NodeType.Example:
+                    return new ExampleNode();
+                case NodeType.CardRefs:
+                    return new CardRefsNode();
+                case NodeType.CardRefItem:
+                    return new CardRefItemNode();
+                case NodeType.CardRef:
+                    return new CardRefNode();
+                case NodeType.Transcription:
+                    return new TranscriptionNode();
+                case NodeType.Abbrev:
+                    return new AbbrevNode();
+                case NodeType.Caption:
+                    return new CaptionNode();
+                case NodeType.Sound:
+                    return new SoundNode();
+                case NodeType.Ref:
+                    return new RefNode();
+                case NodeType.Unsupported:
+                    return new UnsupportedNode();
+                default:
+                    throw new ArgumentException($"Unsupported NodeType: {nodeType}");
+            }
         }
     }
 }

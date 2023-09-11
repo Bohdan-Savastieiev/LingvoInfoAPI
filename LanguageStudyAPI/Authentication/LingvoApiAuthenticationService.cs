@@ -9,16 +9,28 @@ namespace LanguageStudyAPI.Authentication
         private readonly IMemoryCache _memoryCache;
         private readonly HttpClient _client;
         private readonly string _apiKey;
-        private readonly int _tokenLongivity;
-        public LingvoApiAuthenticationService(HttpClient client,
-            IMemoryCache memoryCache,
-            string apiKey,
-            int tokenLongivity)
+        private readonly int _tokenExpirationInMinutes;
+        private readonly string _authenticateEndpoint;
+
+        public LingvoApiAuthenticationService(
+        IHttpClientFactory httpClientFactory,
+        IMemoryCache memoryCache,
+        IConfiguration configuration)
         {
-            _client = client;
+            _client = httpClientFactory.CreateClient();
             _memoryCache = memoryCache;
-            _apiKey = apiKey;
-            _tokenLongivity = tokenLongivity;
+
+            _client.BaseAddress = new Uri(configuration["LingvoApi:BaseUrl"]
+                ?? throw new InvalidOperationException("BaseUrl for Lingvo API is not configured."));
+
+            _apiKey = configuration["LingvoApi:ApiKey"]
+                ?? throw new InvalidOperationException("ApiKey for Lingvo API is not configured.");
+
+            _tokenExpirationInMinutes = int.Parse(configuration["LingvoApi:TokenExpirationInMinutes"]
+                ?? throw new InvalidOperationException("Token Expiration for Lingvo API is not configured."));
+
+            _authenticateEndpoint = configuration["LingvoApi:AuthenticateEndpoint"]
+                ?? throw new InvalidOperationException("Authenticate Endpoint for Lingvo API is not configured.");
         }
 
         public async Task<string> AuthenticateAsync()
@@ -26,7 +38,7 @@ namespace LanguageStudyAPI.Authentication
             if (!_memoryCache.TryGetValue("LingvoApiToken", out string token))
             {
                 _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", _apiKey);
-                var response = await _client.PostAsync("api/v1.1/authenticate", new StringContent(""));
+                var response = await _client.PostAsync(_authenticateEndpoint, new StringContent(""));
                 response.EnsureSuccessStatusCode();
 
                 token = await response.Content.ReadAsStringAsync();
@@ -35,7 +47,7 @@ namespace LanguageStudyAPI.Authentication
                     throw new AuthenticationException("Lingvo API authentication failed");
                 }
 
-                var tokenExpiration = new DateTimeOffset(DateTime.UtcNow.AddMinutes(_tokenLongivity));
+                var tokenExpiration = new DateTimeOffset(DateTime.UtcNow.AddMinutes(_tokenExpirationInMinutes));
                 _memoryCache.Set("LingvoApiToken", token, tokenExpiration);
             }
 

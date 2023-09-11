@@ -1,8 +1,6 @@
 # LingvoInfoAPI
 ## API Description
-LingvoInfoAPI is Web API developed using .NET 7.0. Its primary purpose is to provide users with comprehensive word translations from various languages. To achieve this, our API seamlessly integrates with three renowned translation APIs: **LingvoAPI**, **LingueeAPI**, and **GoogleTranslationAPI**. By accessing these APIs, LingvoInfoAPI gathers a wealth of translation data, processes it, and then consolidates the information into a specific model. 
-
-In case the data is not received, the program passes the request to the LingueeAPI. In case the information also has not been found, the client receive one simple translation of the lexeme provided from GoogleTranslationAPI. This model is subsequently serialized into a JSON format and made available through the Translations endpoint.
+LingvoInfoAPI is Web API developed using .NET 7.0. Its primary purpose is to provide users with comprehensive word translations from various languages. To achieve this, API integrates with several external APIs. 
 
 #### Included languages
 - "zh" – Chinese (Simplified)

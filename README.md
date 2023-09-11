@@ -4,50 +4,58 @@ LingvoInfoAPI is Web API developed using .NET 7.0. Its primary purpose is to pro
 
 In case the data is not received, the program passes the request to the LingueeAPI. In case the information also has not been found, the client receive one simple translation of the lexeme provided from GoogleTranslationAPI. This model is subsequently serialized into a JSON format and made available through the Translations endpoint.
 
-Sample Request:
+#### Included languages
+"zh" – Chinese (Simplified),
+"de" - German,
+"el" - Greek,
+"en" - English,
+"es" - Spanish,
+"fr" - French,
+"it" - Italian,
+"ru" - Russian,
+"uk" - Ukrainian.
+
+#### Sample Request:
 ```http
-GET /Translations?text=example&srcLang=en&dstLang=ru
+GET /Translations?text=example&srcLang=en&dstLang=ru&includeSound=false
 ```
 
-Sample Response:
+#### Sample Response:
 ```json
 {
-  "lemma": "example",
-  "transcription": "ɪg'zɑːmpl",
-  "audioLink": "https://www.linguee.com/mp3/EN_US/1a/1a79a4d60de6718e8e5b326e338ae533-101.mp3"
+  "lemma": "monarchy",
+  "transcription": "'mɔnəkɪ",
   "translations": [
     {
-      "text": "пример, иллюстрация, типичный случай, аналогичный случай",
+      "text": "монархия",
       "examples": [
         {
-          "native": "to cite / give / provide an example "
-          "translated": "— приводить пример"    
-        }
-      ]
-    },
-    {
-      "text": "урок, назидание; предостережение",
-      "examples": [
+          "nativeExample": "to establish / set up a monarchy ",
+          "translatedExample": "— установить монархию"
+        },
         {
-          "native": "Let these unhappy examples be a warning to others. ",
-          "translated": "— Пусть эти прискорбные уроки послужат предостережением другим."
+          "nativeExample": "to overthrow a monarchy ",
+          "translatedExample": "— свергнуть монархию"
         }
-      ]
+      ],
+      "synonyms": [],
+      "antonyms": []
     }
   ],
-"wordForms": [
+  "wordForms": [
     {
-      "text": "example"
+      "text": "monarchy"
     },
     {
-      "text": "examples"
+      "text": "monarchies"
     },
     {
-      "text": "example's"
+      "text": "monarchy's"
     },
     {
-      "text": "examples'"
+      "text": "monarchies'"
     }
-  ]
+  ],
+  "sound": null
 }
 ```

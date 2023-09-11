@@ -1,4 +1,4 @@
-# LingvoInfoAPI (in progress)
+# LingvoInfoAPI
 ## API Description
 LingvoInfoAPI is Web API developed using .NET 7.0. Its primary purpose is to provide users with comprehensive word translations from various languages. To achieve this, our API seamlessly integrates with three renowned translation APIs: **LingvoAPI**, **LingueeAPI**, and **GoogleTranslationAPI**. By accessing these APIs, LingvoInfoAPI gathers a wealth of translation data, processes it, and then consolidates the information into a specific model. 
 

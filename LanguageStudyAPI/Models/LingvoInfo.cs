@@ -21,11 +21,14 @@ public class LexemeTranslation
     public List<LexemeExample> Examples { get; set; }
     public List<Synonym> Synonyms { get; set; }
     public List<Antonym> Antonyms { get; set; }
+    public List<DerivedLexeme> DerivedLexemes { get; set; }
+
     public LexemeTranslation()
     {
         Examples = new List<LexemeExample>();
         Synonyms = new List<Synonym>();
         Antonyms = new List<Antonym>();
+        DerivedLexemes = new List<DerivedLexeme>();
     }
 }
 public class LexemeExample
@@ -44,4 +47,9 @@ public class Synonym
 public class Antonym
 {
     public string Text { get; set; }
+}
+public class DerivedLexeme
+{
+    public string Text { get; set; }
+    public string Scope { get; set; }
 }

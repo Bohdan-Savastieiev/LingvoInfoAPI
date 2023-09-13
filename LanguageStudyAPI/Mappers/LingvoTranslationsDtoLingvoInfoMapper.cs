@@ -6,37 +6,40 @@ using LanguageStudyAPI.Models;
 using LingvoInfoAPI.DTOs;
 using LanguageExt;
 using LanguageExt.Common;
+using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json.Bson;
 
 namespace LingvoInfoAPI.Mappers
 {
     public class LingvoTranslationsDtoLingvoInfoMapper : ILingvoInfoMapper<LingvoTranslationsDto>
     {
-        public LingvoInfo MapToLingvoInfo(List<LingvoTranslationsDto> translations)
+        public LingvoInfo MapToLingvoInfo(List<LingvoTranslationsDto> translationsDtos)
         {
-            ValidateTranslationsDtos(translations);
+            ValidateTranslationsDtos(translationsDtos);
 
             var lingvoInfo = new LingvoInfo
             {
-                Lemma = translations.First().Title
+                Lemma = translationsDtos.First().Title
             };
 
-            SetTranscription(lingvoInfo, translations);
-            SetTranslations(lingvoInfo, translations);
+            SetTranscription(lingvoInfo, translationsDtos);
+            SetTranslations(lingvoInfo, translationsDtos);
 
             return lingvoInfo;
         }
 
-        private void ValidateTranslationsDtos(List<LingvoTranslationsDto> translations)
+        private void ValidateTranslationsDtos(List<LingvoTranslationsDto> translationsDtos)
         {
-            if (translations == null || !translations.Any())
+            if (translationsDtos == null || !translationsDtos.Any())
             {
-                throw new ArgumentNullException(nameof(translations));
+                throw new ArgumentNullException(nameof(translationsDtos));
             }
         }
 
-        private void SetTranscription(LingvoInfo lingvoInfo, List<LingvoTranslationsDto> translations)
+        // Transcriptions
+        private void SetTranscription(LingvoInfo lingvoInfo, List<LingvoTranslationsDto> translationsDtos)
         {
-            foreach (var dtoObj in translations)
+            foreach (var dtoObj in translationsDtos)
             {
                 var transcriptionNode = GetTranscriptionNode(dtoObj);
                 if (transcriptionNode != null && !string.IsNullOrEmpty(transcriptionNode.Text))
@@ -46,22 +49,23 @@ namespace LingvoInfoAPI.Mappers
                 }
             }
         }
-        private TranscriptionNode? GetTranscriptionNode(LingvoTranslationsDto translation)
+        private TranscriptionNode? GetTranscriptionNode(LingvoTranslationsDto translationsDto)
         {
-            var paragraphNode = translation.Body.OfType<ParagraphNode>().FirstOrDefault();
+            var paragraphNode = translationsDto.Body.OfType<ParagraphNode>().FirstOrDefault();
             return paragraphNode?.Markup.OfType<TranscriptionNode>().FirstOrDefault();
         }
 
+        // Translations and all included
         private void SetTranslations(LingvoInfo lingvoInfo, List<LingvoTranslationsDto> dtoObjs)
         {
             var translations = new List<LexemeTranslation>();
             foreach (var dtoObj in dtoObjs)
             {
-                var bodyNodes = dtoObj.Body;
-                AssignTranslations(translations, bodyNodes);
+                AssignTranslations(translations, dtoObj.Body);
             }
             lingvoInfo.Translations = translations;
         }
+
         private void AssignTranslations(List<LexemeTranslation> translations, List<Node> nodes)
         {
             // JSON file contains various amount of nested lists
@@ -98,7 +102,8 @@ namespace LingvoInfoAPI.Mappers
                     Text = string.Join("", translations).Trim(),
                     Examples = GetExamples(nodes),
                     Synonyms = GetSynonyms(nodes),
-                    Antonyms = GetAntonyms(nodes)
+                    Antonyms = GetAntonyms(nodes),
+                    DerivedLexemes = GetDerivedLexemes(nodes)
                 };
 
                 return result;
@@ -106,17 +111,14 @@ namespace LingvoInfoAPI.Mappers
 
             return null;
         }
-
         private List<Synonym> GetSynonyms(List<Node> nodes)
         {
             return GetRelatedLexemes(nodes, "Syn:").Select(text => new Synonym { Text = text }).ToList();
         }
-
         private List<Antonym> GetAntonyms(List<Node> nodes)
         {
             return GetRelatedLexemes(nodes, "Ant:").Select(text => new Antonym { Text = text }).ToList();
         }
-
         private List<string> GetRelatedLexemes(List<Node> nodes, string captionText)
         {
             var result = new List<string>();
@@ -137,8 +139,39 @@ namespace LingvoInfoAPI.Mappers
 
             return result;
         }
+        private List<DerivedLexeme> GetDerivedLexemes(List<Node> nodes)
+        {
+            var derivedLexemes = new List<DerivedLexeme>();
+            var cardRefsNode = nodes.OfType<CardRefsNode>().FirstOrDefault();
+            if (cardRefsNode != null && cardRefsNode.Items.Count != 0)
+            {
+                foreach (var cardRefItem in cardRefsNode.Items)
+                {
+                    if (!(cardRefItem is CardRefItemNode))
+                    {
+                        continue;
+                    }
 
+                    var exampleNode = cardRefItem.Markup.OfType<CardRefNode>().FirstOrDefault();
+                    if (exampleNode == null || exampleNode.Text.IsNullOrEmpty())
+                    {
+                        continue;
+                    }
 
+                    var scope = GetScopeFromDictionary(exampleNode.Dictionary);
+
+                    var derivedLexeme = new DerivedLexeme
+                    {
+                        Text = exampleNode.Text,
+                        Scope = scope
+                    };
+
+                    derivedLexemes.Add(derivedLexeme);
+                }
+            }
+
+            return derivedLexemes;
+        }
         private List<LexemeExample> GetExamples(List<Node> nodes)
         {
             var examples = new List<LexemeExample>();
@@ -181,6 +214,21 @@ namespace LingvoInfoAPI.Mappers
 
             return examples;
         }
+        private string GetScopeFromDictionary(string dictionaryName)
+        {
+            var scope = dictionaryName.Split(' ')[0];
+            if (scope.Contains("Lingvo"))
+            {
+                scope = scope.Replace("Lingvo", "");
+            }
+
+            if (scope.Contains("American"))
+            {
+                scope = "Universal";
+            }
+
+            return scope;
+        }
         private void AssignNewTranslation(List<LexemeTranslation> translations, LexemeTranslation translation)
         {
             var equalTranslation = translations.FirstOrDefault(x => string.Equals
@@ -192,6 +240,9 @@ namespace LingvoInfoAPI.Mappers
             else
             {
                 equalTranslation.Examples.AddRange(translation.Examples);
+                equalTranslation.Synonyms.AddRange(translation.Synonyms);
+                equalTranslation.Antonyms.AddRange(translation.Antonyms);
+                equalTranslation.DerivedLexemes.AddRange(translation.DerivedLexemes);
             }
         }
     }

@@ -90,7 +90,6 @@ namespace LingvoInfoAPI.Clients
             {
                 throw new InvalidOperationException($"{key} for Lingvo API is not configured.");
             }
-            // Additional validation for valid URLs can be added here if necessary
         }
     }
 }

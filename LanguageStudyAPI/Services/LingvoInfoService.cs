@@ -41,7 +41,7 @@ public class LingvoInfoService : ILingvoInfoService
         _lingvoMapper = lingvoMapper;
         _wordFormsMapper = wordFormsMapper;
     }
-    public async Task<LingvoInfo> GetTranslationsAsync(string text, string srcLang, string dstLang, bool includeSound)
+    public async Task<LingvoInfo> GetLingvoInfoAsync(string text, string srcLang, string dstLang, bool includeSound)
     {
         string lingvoSrcLang = lingvoLanguages[srcLang].ToString();
         string lingvoDstLang = lingvoLanguages[dstLang].ToString();

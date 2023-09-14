@@ -38,7 +38,6 @@ builder.Services.AddScoped<LingvoApiClient>();
 // Services
 builder.Services.AddScoped<ILingvoInfoService, LingvoInfoService>();
 builder.Services.AddScoped<GoogleTranslationApiService>();
-builder.Services.AddScoped<ILingvoApiService, LingvoApiService>();
 
 // Http Clients Configuration
 ApplicationInstaller.ConfigureLingueeHttpClient(builder);

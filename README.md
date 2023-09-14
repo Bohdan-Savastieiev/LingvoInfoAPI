@@ -15,7 +15,7 @@ LingvoInfoAPI is Web API developed using .NET 7.0. Its primary purpose is to pro
 
 #### Sample Request:
 ```http
-GET /Translations?text=example&srcLang=en&dstLang=ru&includeSound=false
+GET /LingvoInfo?text=example&srcLang=en&dstLang=ru&includeSound=false
 ```
 
 #### Sample Response:

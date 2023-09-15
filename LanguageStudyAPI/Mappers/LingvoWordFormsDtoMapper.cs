@@ -24,7 +24,10 @@ namespace LingvoInfoAPI.Mappers
                                 && ValidateWordFormValue(form.Lexem, value))
                             {
                                 value = value.Replace("*", "");
-                                result.Add(new WordForm { Text = value });
+                                if (value != "-" && value != "Plural" && value != "Singular")
+                                {
+                                    result.Add(new WordForm { Text = value.ToLowerInvariant() });
+                                }
                             }
                         }
                     }

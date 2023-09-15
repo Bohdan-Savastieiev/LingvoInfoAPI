@@ -18,7 +18,7 @@ public class LingvoInfoService : ILingvoInfoService
     private readonly LingvoTranslationsDtoLingvoInfoMapper _lingvoMapper;
     private readonly LingvoWordFormsDtoMapper _wordFormsMapper;
 
-    private readonly Dictionary<string, int> lingvoLanguages = new ()
+    private readonly Dictionary<string, int> lingvoLanguages = new()
     {
         { "zh", 1028 },
         { "de", 1031 },
@@ -51,11 +51,16 @@ public class LingvoInfoService : ILingvoInfoService
         if (translations.IsNullOrEmpty())
         {
             var translation = await _googleClient.TranslateTextAsync(text, dstLang);
-            return new LingvoInfo { Lemma = translation };
+            return new LingvoInfo
+            {
+                Lemma = text,
+                Translations = new List<LexemeTranslation>
+            { new LexemeTranslation { Text = translation } }
+            };
         }
 
         var lingvoInfo = _lingvoMapper.MapToLingvoInfo(translations);
-        
+
         var wordFormsDto = await _lingvoClient.GetWordFormsAsync(text, lingvoSrcLang);
         lingvoInfo.WordForms = _wordFormsMapper.MapWordForms(wordFormsDto);
 
@@ -69,7 +74,7 @@ public class LingvoInfoService : ILingvoInfoService
         }
 
         var googleTranslation = await _googleClient.TranslateTextAsync(text, dstLang);
-        if(!lingvoInfo.Translations.Any(x => x.Text.Contains(googleTranslation)))
+        if (!lingvoInfo.Translations.Any(x => x.Text.Contains(googleTranslation)))
         {
             lingvoInfo.Translations.Insert(0, new LexemeTranslation { Text = googleTranslation });
         }
@@ -90,7 +95,7 @@ public class LingvoInfoService : ILingvoInfoService
     }
 
     private LingvoSoundParameters? FindFirstSoundFileAndDictionary(List<LingvoTranslationsDto> translations)
-    {   
+    {
         foreach (var translation in translations)
         {
             var paragraphNode = translation.Body.FirstOrDefault(x => x is ParagraphNode) as ParagraphNode;

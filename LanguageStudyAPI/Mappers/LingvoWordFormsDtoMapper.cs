@@ -1,6 +1,7 @@
 ﻿using LanguageStudyAPI.Models;
 using LingvoInfoAPI.DTOs;
 using Microsoft.IdentityModel.Tokens;
+using System.Collections.Generic;
 
 namespace LingvoInfoAPI.Mappers
 {
@@ -34,7 +35,10 @@ namespace LingvoInfoAPI.Mappers
                 }
             }
 
-            return result;
+            return result
+                .GroupBy(wf => wf.Text)
+                .Select(group => group.First()) // Select one representative WordForm from each group
+                .ToList(); ;
         }
 
         private bool ValidateWordFormValue(string lexem, string value)
